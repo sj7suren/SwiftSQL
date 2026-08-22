@@ -1,6 +1,6 @@
 # SwiftSQL
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2B%20x64-lightgrey.svg)](#构建)
 [![C++](https://img.shields.io/badge/C%2B%2B-17-brightgreen.svg)](CMakeLists.txt)
 
@@ -187,14 +187,48 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 
 ## 许可证
 
-SwiftSQL 是自由开源软件，依据 **Apache License 2.0** 授权发布。
+SwiftSQL 是自由软件，依据 **GNU General Public License v3.0 或更新版本**授权发布。
 
 ```
-Copyright 2026 SwiftSQL Contributors
+Copyright (C) 2026 SwiftSQL Contributors
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 ```
 
-许可证全文见 [LICENSE](LICENSE)。你可以自由使用、修改、分发本软件（含商业用途），并获得贡献者的专利许可；再分发时需随附许可证副本、保留原有版权与归属声明，并在被修改的文件中标注你所做的更改。完整条款以 LICENSE 的英文原文为准。
+许可证全文见 [LICENSE](LICENSE)，每个源文件头部带有 `SPDX-License-Identifier: GPL-3.0-or-later` 标识。
 
-本软件按"原样"提供，不附带任何明示或暗示的担保。
+**这对你意味着什么：**
 
-第三方组件（wxWidgets、各数据库客户端库、libssh2、OpenSSL 等）遵循各自的原始许可证，不受本许可影响，详见 [release/win/DEPENDENCIES.txt](release/win/DEPENDENCIES.txt)。
+- 你可以自由地运行、研究、修改和分发本软件，**包括商业用途**。
+- 但只要你**分发**（含分发修改版或包含本代码的衍生作品），就必须以同样的 GPLv3 条款开放对应的完整源代码，并保留版权与许可声明。
+- 这一要求对**内部自用**不适用——你自己或公司内部使用、修改而不对外分发，无需开源。
+- 本软件按"原样"提供，不附带任何明示或暗示的担保。
+
+> 若你需要在专有软件中集成本项目而不受 GPL 传染性约束，当前**没有**可用的商业授权选项。
+
+### 第三方组件
+
+各依赖遵循各自的原始许可证，均与 GPLv3 兼容：
+
+| 组件 | 许可证 |
+|---|---|
+| wxWidgets | wxWindows Library Licence 3.1（LGPL 加二进制分发例外） |
+| OpenSSL 3.x | Apache-2.0 |
+| MariaDB Connector/C | LGPL-2.1 |
+| PostgreSQL libpq | PostgreSQL License |
+| SQLite | Public Domain |
+| libssh2 | BSD-3-Clause |
+| zlib / lz4 | zlib / BSD-2-Clause |
+
+> 注意：OpenSSL 3.x 采用 Apache-2.0，它与 **GPLv2 不兼容**、与 GPLv3 兼容。这是本项目选择 GPLv3 而非 GPLv2 的原因之一。
+>
+> Oracle Instant Client SDK 为专有组件，不随本仓库或安装包分发，仅在用户自备时于本地编译期使用。
+
+完整依赖审计见 [release/win/DEPENDENCIES.txt](release/win/DEPENDENCIES.txt)。
