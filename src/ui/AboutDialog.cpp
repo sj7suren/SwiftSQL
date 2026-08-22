@@ -14,6 +14,7 @@
 #include <wx/button.h>
 #include <wx/bitmap.h>
 #include <wx/statbox.h>
+#include <wx/hyperlink.h>
 #include <wx/mstream.h>
 #include <wx/utils.h>
 #include <wx/image.h>
@@ -145,6 +146,22 @@ AboutDialog::AboutDialog(wxWindow* parent)
     copy->SetFont(Ui(8.5));
     copy->SetForegroundColour(theme::kTextMuted);
     root->Add(copy, 0, wxALIGN_CENTRE | wxTOP, 18);
+
+    // ---- source code (GPLv3 s.6) ----
+    // A GPL binary has to come with its source, or with an offer telling the
+    // holder where to get it. The installer's licence page says so, but whoever
+    // is running the program may never have seen that page -- this is the copy
+    // that travels with the application itself. Clickable on purpose: an offer
+    // nobody can act on is not much of an offer.
+    auto* src = new wxHyperlinkCtrl(this, wxID_ANY,
+        tr(L"源代码：") + core::kSourceUrl, core::kSourceUrl,
+        wxDefaultPosition, wxDefaultSize, wxHL_ALIGN_CENTRE | wxNO_BORDER);
+    src->SetFont(Ui(8.5));
+    src->SetNormalColour(theme::kPrimary);
+    src->SetHoverColour(theme::kPrimary);
+    src->SetVisitedColour(theme::kPrimary);
+    src->SetBackgroundColour(GetBackgroundColour());
+    root->Add(src, 0, wxALIGN_CENTRE | wxTOP, 6);
 
     // ---- QQ community group ----
     auto* qq = new wxStaticText(this, wxID_ANY,
