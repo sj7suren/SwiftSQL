@@ -223,12 +223,24 @@ The full text is in [LICENSE](LICENSE), and every source file carries an `SPDX-L
 
 **What this means for you:**
 
-- You are free to run, study, modify and distribute this software, **including commercially**.
+The point most often confused: **the GPLv3 governs whether you ship source when you distribute, not whether you may make money.** Commercial use — including profiting from it — is entirely free.
+
+| Your situation | Must you publish your source? | Do you need a commercial licence? |
+|---|---|---|
+| Your company uses it to manage its production databases | No | No |
+| You modify it for internal use only, never distributing it | No | No |
+| You pass the installer on unchanged to clients or colleagues | Just include the GPLv3 and a way to get the source | No |
+| You distribute a modified version, or ship this code inside your own product | **Yes**, the complete source under the GPLv3 | No, if you are willing to open it |
+| Same, but your product must stay **closed-source** | — | **Yes** |
+
+In detail:
+
+- You are free to run, study, modify and distribute this software, commercial settings included, **at no cost**.
 - But whenever you **distribute** it — a modified version, or any derivative work containing this code — you must release the corresponding complete source under the same GPLv3 terms, and keep the copyright and licence notices intact.
-- This does not apply to **internal use**: using and modifying it yourself or inside your company, without distributing it, creates no obligation to publish anything.
+- **Internal use is exempt**: using and modifying it yourself or inside your company, without distributing it, creates no obligation to publish anything.
 - The software is provided "as is", without warranty of any kind, express or implied.
 
-> If you need to integrate SwiftSQL into proprietary software without the GPL's copyleft obligations, a separate commercial licence is available — see [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below.
+> The GPLv3 only gets in your way when you need to ship this code inside a **closed-source product**. A separate commercial licence covers that case — see [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below.
 
 ### Third-party components
 
@@ -256,7 +268,7 @@ The full dependency audit is in [release/win/DEPENDENCIES.txt](release/win/DEPEN
 
 The open-source build (GPLv3) is feature-complete and holds nothing back. For the great majority of uses it is all you need.
 
-The GPLv3's copyleft obligation, however, does not suit every organisation — typically when you:
+The GPLv3's copyleft obligation does not suit every organisation, however — typically when you:
 
 - need to embed SwiftSQL in a **closed-source** commercial product and distribute it
 - work under an internal compliance policy that does not accept copyleft licences
