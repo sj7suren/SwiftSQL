@@ -14,8 +14,10 @@ needs NO Visual C++ Redistributable — vcruntime140/msvcp140 are baked in.
 `dumpbin /dependents SwiftSQL.exe` lists only Windows system DLLs:
 
   dbghelp, bcrypt, Secur32, CRYPT32, ODBC32, IMM32, KERNEL32, USER32, GDI32,
-  COMDLG32, WINSPOOL.DRV, SHELL32, SHLWAPI, COMCTL32, ole32, RPCRT4, ADVAPI32,
-  WS2_32, OLEACC, UxTheme, dwmapi, MSIMG32
+  COMDLG32, WINSPOOL.DRV, SHELL32, SHLWAPI, COMCTL32, ole32, OLEAUT32, RPCRT4,
+  ADVAPI32, WS2_32, OLEACC, UxTheme, dwmapi, MSIMG32
+
+(23 imports, all shipped with Windows. Verified against the 1.1.20 build.)
 
 All database drivers except Oracle are statically linked into the exe
 (MySQL/MariaDB, PostgreSQL libpq, SQLite, SSH tunnel libssh2, OpenSSL) — no
@@ -34,19 +36,35 @@ The app still supports Oracle / 达梦: a user who needs it drops a 64-bit oci.d
 next to SwiftSQL.exe, or points the in-app OCI path at their Oracle client.
 
 --------------------------------------------------------------------------
-Visual C++ runtime — bundled defensively (not strictly required)
+Visual C++ runtime — NOT bundled, and not needed
 --------------------------------------------------------------------------
-Nothing in this build actually needs a VC++ Redistributable: SwiftSQL.exe is
-static /MT and Oracle is not bundled. As a safeguard, the installer still ships
-the Microsoft Visual C++ 2015-2022 x64 runtime (redist\VC_redist.x64.exe) and
-installs it silently ONLY when it is missing:
+The installer ships no VC++ Redistributable. There is nothing for it to fix:
+the dependency list above contains no vcruntime140.dll, no msvcp140.dll and no
+api-ms-win-crt-* — the CRT (including the Universal CRT) is linked into the exe
+at link time by /MT, so "the C++ runtime is missing" is not a state this build
+can be in.
 
-  Check:  registry HKLM\SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64
-          \Installed == 1, else probe {sys}\vcruntime140.dll
-  Install: VC_redist.x64.exe /install /quiet /norestart   (skipped if present)
+Earlier releases bundled VC_redist.x64.exe "as a safeguard". It was 25 MB of an
+installer that is otherwise 7 MB, guarding a failure mode that cannot occur, and
+it was removed in 1.1.20 (installer: 29.9 MB -> 7.3 MB).
 
-Most modern Windows already has it, so this step usually does not run. Remove
-redist\VC_redist.x64.exe and the [Run] vcredist line to drop the safeguard.
+That removal depends on the build staying on the static CRT, which is decided in
+a different file (CMAKE_MSVC_RUNTIME_LIBRARY in CMakeLists.txt). To keep the two
+in sync, release\win\build_installer.bat runs dumpbin on the staged exe before
+packaging and ABORTS if it finds a dynamic-CRT import. Switching to /MD without
+restoring the redistributable therefore fails at packaging time, rather than
+silently shipping a package that dies on a clean machine.
+
+--------------------------------------------------------------------------
+Minimum operating system
+--------------------------------------------------------------------------
+Windows 10 x64 or later (the installer enforces MinVersion=10.0).
+
+This is a toolchain constraint, not a policy: the exe is built with the MSVC
+14.5x toolset, and Microsoft dropped Windows 7/8 support in VS 2022 17.10
+(toolset 14.40). Because the CRT is static, those Win10-only imports are baked
+into the exe — a Windows 7 install would complete and then fail to launch, so
+the installer refuses up front instead.
 
 --------------------------------------------------------------------------
 User-data footprint (for reference / uninstall)
