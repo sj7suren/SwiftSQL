@@ -185,6 +185,20 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 
 ---
 
+## 支持项目 ☕
+
+SwiftSQL 完全免费，没有付费版本、功能阉割或使用期限——所有能力对所有人开放。
+
+如果它为你省下了时间，欢迎请作者喝杯咖啡：
+
+<img src="src/win/assets/alipay_qr.png" width="200" alt="支付宝收款码">
+
+应用内「关于 → ☕ 捐赠支持」可以扫到同一个码。
+
+捐赠完全自愿：**它不解锁任何功能，也不构成服务承诺或商业授权**。本项目依 GPLv3 授权，捐赠不改变任何许可条款。
+
+---
+
 ## 许可证
 
 SwiftSQL 是自由软件，依据 **GNU General Public License v3.0 或更新版本**授权发布。
