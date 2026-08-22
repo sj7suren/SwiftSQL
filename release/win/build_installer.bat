@@ -23,6 +23,33 @@ if not exist "%~dp0dist\SwiftSQL.exe" (
   echo         Build the app in Release and copy build\SwiftSQL.exe to dist\.
   exit /b 1
 )
+
+REM ---- Static-CRT guard ------------------------------------------------------
+REM SwiftSQL.iss bundles NO Visual C++ redistributable, because the exe links the
+REM CRT statically (CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded" in CMakeLists.txt).
+REM Those two facts live in different files with nothing tying them together. If
+REM the build ever switches to the dynamic CRT (/MD), the exe starts importing
+REM vcruntime140.dll and this script would happily produce an installer that dies
+REM on any machine without the VC++ runtime -- a failure that CANNOT reproduce on
+REM a developer box, because Visual Studio already put the runtime there.
+REM So verify it here, where the assumption is actually being relied on.
+where dumpbin >nul 2>&1
+if errorlevel 1 (
+  echo [WARN] dumpbin not found - skipping the static-CRT check.
+  echo        Run this from a Visual Studio developer prompt to enable it.
+) else (
+  dumpbin /nologo /dependents "%~dp0dist\SwiftSQL.exe" | findstr /i "vcruntime140 msvcp140" >nul
+  if not errorlevel 1 (
+    echo [ERROR] dist\SwiftSQL.exe imports the DYNAMIC Visual C++ runtime.
+    echo         The installer ships no redistributable, so the package would fail
+    echo         to start on a clean machine.
+    echo         Fix either side of the contract:
+    echo           - build with the static CRT ^(/MT^), or
+    echo           - restore VC_redist.x64.exe to the Files/Run sections of the .iss
+    exit /b 1
+  )
+)
+
 "%ISCC%" "%~dp0SwiftSQL.iss"
 echo ISCC_EXIT=%errorlevel%
 endlocal
