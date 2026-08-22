@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree_TableOps.cpp — table-leaf context-menu operations (drop / empty /
 // rename / export / copy-name / copy-DDL / object-info / batch-drop) plus the name
 // qualifier and category refresh, split out of ConnectionTree.cpp per the ≤1000-line

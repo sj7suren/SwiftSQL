@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserAdminPg.cpp — PostgreSQL role / privilege administration, driven entirely
 // through IConnection::Execute (no libpq here). See UserAdmin.h for the scope note.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sse_parser_test.cpp — unit tests for ai::SseParser (streaming frame reassembly).
 //
 // Same dependency-free harness as tableio_test.cpp. HTTP does not respect line/event

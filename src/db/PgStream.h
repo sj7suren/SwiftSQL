@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgStream.h — PostgreSQL-side row streaming/writing helpers for the
 // cross-database synchronization suite (T2/T4 of ADR-015).
 //

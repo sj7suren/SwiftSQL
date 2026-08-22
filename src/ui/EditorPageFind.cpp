@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorPageFind.cpp — third translation unit for ui::EditorPage: the Ctrl+F
 // find/replace bar, whole and entire.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ServerMonitorDialog.h — the 服务器监控 (server monitor) tool window.
 //
 // Opened from 工具 ▸ 服务器监控 for the active connection. Shows every live server

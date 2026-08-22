@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCrossEngineGateTests.cpp -- table-driven regression test for
 // ui::CrossEngineSupported (src/ui/SyncCrossEngineGate.{h,cpp}), the wizard-
 // entry policy gate that decides which db::Dialect pairs SyncWizardDialog

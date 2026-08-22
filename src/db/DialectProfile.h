@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DialectProfile.h — extensible per-dialect column/field editor abstraction for
 // the Table Design view (ADR-014). This is a *separate* bounded context from the
 // sync engine's RenderSchemaChange/SchemaChangeSet: sync = "diff existing

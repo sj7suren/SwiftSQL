@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTreeInternal.h — shared internals for the ConnectionTree split.
 // ConnectionTree's method definitions are spread across several
 // ConnectionTree_*.cpp files (per the 1000-line file charter, docs/CHARTER.md);

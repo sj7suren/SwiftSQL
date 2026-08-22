@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_stub.h — shared harness for the offline cross-database synchronization
 // test suite (sync_schema_test / sync_data_test / sync_exec_test /
 // sync_plan_test).

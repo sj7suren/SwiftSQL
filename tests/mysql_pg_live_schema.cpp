@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_schema.cpp — the SCHEMA-QUALIFIED IDENTITY suite.
 //
 // This target exists to answer one question that no offline test can:

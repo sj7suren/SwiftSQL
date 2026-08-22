@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ObjectListPanel.h — a reusable "object list" tab: a report-style wxListCtrl of a
 // database's objects of ONE kind (表 / 视图 / 函数 / 存储过程), with a top toolbar of
 // type-specific actions, a matching right-click menu, and a double-click default

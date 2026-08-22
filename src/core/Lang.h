@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Lang.h — i18n engine using language packs. A "pack" is a catalog mapping the
 // canonical (Chinese) source string to a target language, keyed by the source
 // itself (gettext-style msgid). Adding a language = adding a pack (an in-code

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OracleOciDriver.cpp — Oracle Database over the *native* OCI C API (Oracle Call
 // Interface). No ODBC, no third-party wrapper. The Instant Client's oci.dll is
 // *not* linked at build time (no oci.lib): every OCI function is late-bound from

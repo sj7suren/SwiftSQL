@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // GhostSuggest.h — the LOCAL half of the editor's grey inline suggestion
 // ("ghost text"): given what is typed so far, what is the obvious next piece of
 // SQL skeleton?

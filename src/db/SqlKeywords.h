@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlKeywords.h — dialect-specific SQL keyword and function lists used for
 // editor syntax highlighting and autocompletion. SQL-language knowledge belongs
 // in the data-access layer (db), keyed by Dialect.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MainFrame.h — SwiftSQL main window. The sidebar connection tree + all
 // connection lifecycle live in ConnectionTree; MainFrame owns the frame chrome,
 // the query/data editor, and the table-design / ER views. The tree delegates

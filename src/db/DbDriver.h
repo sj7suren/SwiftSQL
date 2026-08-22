@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DbDriver.h — real database connectivity layer.
 // Blocking calls by design; the UI runs them off the main thread and marshals
 // results back with CallAfter. One implementation per wire protocol:

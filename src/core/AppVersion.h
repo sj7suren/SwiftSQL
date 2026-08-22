@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AppVersion.h - user-facing build/version labels.
 //
 // The version number itself lives in ONE place — core/Version.h — which the Windows
@@ -18,12 +21,13 @@ inline constexpr const wchar_t* kAppVersionText = L"v" SW_WSTR(SWIFTSQL_VER_STR)
 #undef SW_WSTR
 #undef SW_WSTR2
 // Attribution shown in the About dialog, the splash footer and the exe version
-// resource. SwiftSQL is open source under the Apache License 2.0, so the holder
-// is the project itself rather than a company — see LICENSE at the repo root.
-// src/win/SwiftSQL.rc must be kept in sync by hand: the resource compiler cannot
-// read these C++ constants, so it carries its own copy of the same strings.
+// resource. SwiftSQL is free software under the GNU GPL v3.0 or later, so the
+// holder is the project itself rather than a company — see LICENSE at the repo
+// root. src/win/SwiftSQL.rc must be kept in sync by hand: the resource compiler
+// cannot read these C++ constants, so it carries its own copy of the same
+// strings.
 inline constexpr const wchar_t* kCopyrightText =
-    L"Copyright (c) 2026 SwiftSQL Contributors";
-inline constexpr const wchar_t* kLicenseText = L"Apache License 2.0";
+    L"Copyright (C) 2026 SwiftSQL Contributors";
+inline constexpr const wchar_t* kLicenseText = L"GNU GPL v3.0 or later";
 
 } // namespace core

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AutomationStore.h — the persisted "automation job" library (Navicat-style
 // Automation). Each job is a sync-structure / sync-data / sync-both / export task
 // bound to a source connection+database (and, for sync jobs, a target

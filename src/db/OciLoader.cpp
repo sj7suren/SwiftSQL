@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OciLoader.cpp — see OciLoader.h. Late-binds oci.dll at first use.
 //
 // Resolution order (first that loads wins):

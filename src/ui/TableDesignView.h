@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDesignView.h — table structure browser & editor, styled per docs/UI's
 // "表设计" board: header + tab row (字段/索引/外键/DDL).
 //

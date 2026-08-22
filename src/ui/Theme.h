@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Theme.h — SwiftSQL design tokens.
 // Single source of truth for colors, lifted from docs/UI/SwiftSql.dc.html.
 #pragma once

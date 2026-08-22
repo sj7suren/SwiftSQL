@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSpecScript.h — a scripted driver for the data-sync compare screen's
 // MODEL, plus the outcome vocabulary and the deterministic rendering of what a
 // given dialog state would execute.

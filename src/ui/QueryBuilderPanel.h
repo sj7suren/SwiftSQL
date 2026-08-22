@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QueryBuilderPanel.h — a Navicat-style visual query builder tab. Left: the
 // current database's table list. Centre: a self-drawn scrolled canvas of draggable
 // table boxes whose columns can be checked (→ SELECT) and wired column-to-column

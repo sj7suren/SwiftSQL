@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // pg_live_test.cpp — env-gated live PostgreSQL integration test for the
 // cross-database sync suite. This is the first time PgConnection is exercised
 // against a real server (Connect / Execute / GetColumns / GetTableSchema /

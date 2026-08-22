@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTypes.h — structured row streaming + literal rendering for data sync.
 //
 // The stringified QueryResult path can't drive a row-level data diff (it loses

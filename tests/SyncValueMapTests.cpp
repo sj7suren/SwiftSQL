@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncValueMapTests.cpp — standalone unit tests for ADR-015 T1
 // (db::sync::SyncValueMap: ValueVerdict/MayEmit, BuildBridges, ConvertCell) and
 // T3 (db::sync::RowChange/RowChangeBuilder/RowChangeSet + RenderRowDml).

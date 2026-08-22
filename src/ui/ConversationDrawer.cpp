@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConversationDrawer.cpp — see header. Pure-view history column: a "＋ 新对话"
 // header button over a scrolled list of ConvRow items, each painted by hand
 // (title + relative time + a delete ✕ on the right). Colours come from Theme

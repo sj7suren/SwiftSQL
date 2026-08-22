@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareGrid.cpp — see header. wxDataViewCtrl + a wxDataViewModel that
 // reads and writes ui::SyncSelection directly (no local check state).
 #include "ui/SyncCompareGrid.h"

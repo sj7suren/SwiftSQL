@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqliteDriver.cpp — embedded, file-based engine via the SQLite C API.
 // Unlike the client/server drivers there is no host/port/user/password: the
 // "connection" is a database file path, carried in ConnectionProfile::database.

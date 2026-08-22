@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // prompt_builder_test.cpp — unit tests for ai::BuildMessages, the pure template
 // assembler. Same dependency-free harness as tableio_test.cpp: a tiny assert loop,
 // no doctest/Catch2. BuildMessages is a pure function over an AiContext + strings,

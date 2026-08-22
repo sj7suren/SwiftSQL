@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgDriver.cpp — PostgreSQL connection via libpq.
 #include "db/DbDriver.h"
 #include "db/PgSql.h"          // detail:: pure DDL-rendering helpers

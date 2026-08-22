@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridModelTests.cpp — headless unit tests for ui::gridmodel
 // (src/ui/ResultGridModel.{h,cpp}): the pure, widget-free half of the result
 // grid — sort-key algebra, the client-side multi-key row reorder, clipboard

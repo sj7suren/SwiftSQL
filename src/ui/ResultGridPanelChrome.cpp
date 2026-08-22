@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridPanelChrome.cpp — third translation unit for ResultGridPanel: the
 // pure widget-assembly half. Every band of chrome the panel stacks vertically is
 // built here (top toolbar, the 文本▾ split button, the resizable filter/sort

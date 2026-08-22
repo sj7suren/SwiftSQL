@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QueryBuilderModel.cpp — table/join bookkeeping + the SQL generator. See the
 // header for the design contract (stable ids, always-valid output).
 #include "ui/QueryBuilderModel.h"

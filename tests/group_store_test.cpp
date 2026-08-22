@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // group_store_test.cpp — unit tests for core::GroupStore, the persistence
 // behind the sidebar's 分组管理 (connection groups + object groups).
 //

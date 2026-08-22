@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgSql.cpp — implementations of the connection-free PostgreSQL SQL-rendering
 // helpers declared in PgSql.h. Moved out of PgDriver.cpp to keep that file within
 // the 1000-line charter limit; behavior is unchanged.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OpenAiCompatProvider.h — adapter for the OpenAI Chat Completions wire protocol and
 // every endpoint that clones it: OpenAI, DeepSeek, 智谱GLM (paas/v4), Kimi, 通义千问,
 // OpenRouter, Groq, xAI, Mistral, and local LM Studio / vLLM / Ollama's /v1 shim.

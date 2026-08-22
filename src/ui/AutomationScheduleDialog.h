@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AutomationScheduleDialog.h — configure the in-app schedule of one automation
 // job: either periodic ("every N minutes/hours") or a daily fixed time ("每天
 // HH:MM"). The dialog edits only the schedule fields of the AutomationJob it is

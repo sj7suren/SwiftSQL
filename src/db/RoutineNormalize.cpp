@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineNormalize.cpp — the shared character-walk state machine. See the header
 // for the design rationale; this file is the machine and nothing else.
 #include "db/RoutineNormalize.h"

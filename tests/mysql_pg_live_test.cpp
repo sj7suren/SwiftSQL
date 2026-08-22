@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_test.cpp — env-gated LIVE cross-engine integration test:
 // a real MySQL server as the source, a real PostgreSQL server as the target.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mermaid_test.cpp — unit tests for the Mermaid flowchart engine's pure half:
 // ParseMermaid (text → nodes/edges/shapes/direction) and AssignRanks (longest-
 // path layering with back-edge removal). Rendering (wxGraphicsContext) is a thin

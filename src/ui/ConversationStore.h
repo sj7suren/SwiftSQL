@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConversationStore.h — encrypted, on-disk persistence for AI chat conversations.
 //
 // Each conversation is a small record: a stable id, a title (the first user message

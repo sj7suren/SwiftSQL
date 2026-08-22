@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSelectionTests.cpp — T6 of ADR-015: standalone unit tests for
 // ui::SyncSelection (src/ui/SyncSelection.{h,cpp}), the pure/non-wx model of
 // the user's check-state on the data-sync compare screen.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // StmtGuard.h — RAII closer for the raw ODBC statement handle held across a
 // fetch/dump loop. Moving the release into a destructor makes those loops
 // exception-safe: if a row's SQLGetData / push_back / emit / sink throws

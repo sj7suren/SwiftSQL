@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Json.cpp — implementation of the AI-layer JSON reader/writer declared in Json.h.
 //
 // Design notes:

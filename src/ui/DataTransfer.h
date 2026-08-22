@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataTransfer.h — the request payload the data browser hands to the export
 // dialog. ResultGridPanel packages the current view (columns, current-page rows,
 // selection snapshot, and the db-qualified whole-table query parts) into one of

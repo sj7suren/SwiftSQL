@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDesignView_Options.cpp — 选项 tab of the table design view, split out per the
 // ≤1000-line charter. Unlike the always-live grids, the 选项 tab is a plain whole-table
 // form: one "label + control" row per profile_->TableOptionSpecs() item — a PopupListCell

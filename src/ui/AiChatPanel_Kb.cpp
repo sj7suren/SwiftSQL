@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiChatPanel_Kb.cpp — the knowledge-base + model-picker half of AiChatPanel, split
 // into its own translation unit to keep AiChatPanel.cpp under the 1000-line charter
 // limit (same class, cross-TU member definitions — mirrors the MainFrame_*.cpp /

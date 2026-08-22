@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataGrid.h — a wxGrid that paints the CURRENT row's left row-label (gutter)
 // with an active tint + bold primary number, so the selected row is easy to
 // track. wxGrid's SetLabelTextColour/Font are grid-global, so per-row styling

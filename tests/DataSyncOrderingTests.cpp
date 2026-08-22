@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataSyncOrderingTests.cpp — ADR-015 T2/T4: the PK-ordering defenses of the
 // streaming data diff, and the ExecuteBatch degradation contract.
 //

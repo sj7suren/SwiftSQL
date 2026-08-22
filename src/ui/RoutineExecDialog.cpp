@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineExecDialog.cpp — see header.
 #include "ui/RoutineExecDialog.h"
 

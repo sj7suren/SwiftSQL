@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_mysqltx2.cpp — the ROLLBACK-after-failed-COMMIT pair (M5, M6).
 // Separate TU purely for the charter's 1000-line ceiling; see
 // mysql_pg_live_mysqltx.h.

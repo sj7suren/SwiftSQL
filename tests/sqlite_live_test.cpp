@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sqlite_live_test.cpp — self-contained, zero-config live integration test for
 // the SQLite driver (SqliteConnection). Unlike pg_live_test this needs NO env
 // vars, NO server and NO network: SQLite is an embedded, file-based engine, so

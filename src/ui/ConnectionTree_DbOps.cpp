@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree_DbOps.cpp — database-level operations (create / edit / delete /
 // dump / sync / run-script) plus the cross-connection table copy/paste, split out
 // of ConnectionTree.cpp per the ≤1000-line charter (docs/CHARTER.md). The method

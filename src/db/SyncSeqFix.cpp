@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSeqFix.cpp — see header. Per-dialect identity/sequence repair.
 #include "db/SyncSeqFix.h"
 

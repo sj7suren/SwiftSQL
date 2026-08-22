@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PromptBuilder.h — turns a use-case + assembled context + the user's words into the
 // messages[] we send to the model. Pure & unit-testable (no I/O). This is where the
 // "fast, good prompt" lives: fixed system/few-shot templates (0-cost to assemble,

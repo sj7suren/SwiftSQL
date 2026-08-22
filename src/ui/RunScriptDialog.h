@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RunScriptDialog.h — run a .sql script file against a live connection, with a
 // config step (file / encoding / error-handling) and a live progress step
 // (gauge, success/failure counters, a per-failure list you can copy or export,

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // negative_control.h — the negative-control gate.
 //
 // A NEGATIVE claim ("no DELETE reached the target", "zero divergences", "the

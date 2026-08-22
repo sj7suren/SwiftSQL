@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ColumnPicker.cpp — see header. A small modal wxDialog: a search box + a
 // live-filtered column list. Mouse (single-click highlights, double-click / 确定
 // picks) and keyboard (type to filter, ↑↓ to move, Enter to pick, Esc to cancel)

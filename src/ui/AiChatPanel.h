@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiChatPanel.h — the AI 助手 chat PAGE (a tab in the editors notebook, replacing the
 // old "AI 功能建设中" placeholder). Layout:
 //   • top bar: 连接 dropdown + 数据库 dropdown (选库 triggers the knowledge-base build)

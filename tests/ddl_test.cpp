@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ddl_test.cpp — offline unit tests for the *real* DDL/literal rendering that
 // sync_test.cpp deliberately stubs out.
 //

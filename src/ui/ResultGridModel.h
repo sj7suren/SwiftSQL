@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridModel.h — the PURE, widget-free half of the result grid.
 //
 // Everything here is a free function over plain values (wxString / std::vector).

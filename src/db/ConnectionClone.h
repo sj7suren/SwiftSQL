@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionClone.h — the single chokepoint for duplicating a live IConnection.
 //
 // db::IConnection is NOT thread-safe (see docs/devlog history on the

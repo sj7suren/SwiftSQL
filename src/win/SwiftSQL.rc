@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 #pragma code_page(65001)
 
 #include <windows.h>
@@ -30,7 +33,7 @@ BEGIN
             VALUE "FileDescription", "SwiftSQL\0"
             VALUE "FileVersion", SWIFTSQL_VER_STR "\0"
             VALUE "InternalName", "SwiftSQL\0"
-            VALUE "LegalCopyright", "Copyright (c) 2026 SwiftSQL Contributors\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 SwiftSQL Contributors\0"
             VALUE "OriginalFilename", "SwiftSQL.exe\0"
             VALUE "ProductName", "SwiftSQL\0"
             VALUE "ProductVersion", SWIFTSQL_VER_STR "\0"

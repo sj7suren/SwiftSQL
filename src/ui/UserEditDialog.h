@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserEditDialog.h — multi-tab create / edit dialog for a database account
 // (Navicat-style user management). Dialect-adaptive: the dialog renders itself
 // from the driver's db::UserAdminModel (conn->GetUserAdminModel()) instead of

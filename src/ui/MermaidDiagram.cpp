@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MermaidDiagram.cpp — pure engine logic: parse, layer, lay out.
 //
 // No GUI headers here on purpose: this translation unit depends only on wxString

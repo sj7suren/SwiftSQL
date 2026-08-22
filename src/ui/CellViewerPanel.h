@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // CellViewerPanel.h — bottom-of-grid single-cell content viewer.
 //
 // Shows one database cell's full value in a read-only, syntax-coloured

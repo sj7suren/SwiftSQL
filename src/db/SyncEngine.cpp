@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncEngine.cpp — see header. Orchestration only.
 #include "db/SyncEngine.h"
 #include "db/SchemaDiff.h"

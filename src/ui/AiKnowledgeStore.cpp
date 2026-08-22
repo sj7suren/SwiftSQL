@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiKnowledgeStore.cpp — see header. JSON-serialise the four durable AiKnowledge
 // fields, encrypt the whole blob with core::EncryptSecret, and store it as a base64
 // token file under <UserDataDir>/kb/<hash>.dat. Load reverses that. We reuse the

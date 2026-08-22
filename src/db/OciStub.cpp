@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OciStub.cpp — link-time stand-in for the native Oracle OCI driver. Compiled
 // ONLY when the build has no Oracle Instant Client SDK (see src/db/CMakeLists.txt).
 //

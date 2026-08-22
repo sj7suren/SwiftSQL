@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridSql.cpp — implementation of the pure result-grid SQL generator.
 // Identifiers are quoted through db::QuoteIdent ONLY; read the note at the top
 // of ResultGridSql.h (single quoting regime + identifier provenance) first.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareRowTests.cpp — T8/T11 standalone unit tests for
 // src/ui/SyncCompareRow.h, the pure half of the Navicat-style compare grid: row
 // classification (类型 / 状态), the SyncPlan -> CompareResult adapter, and the

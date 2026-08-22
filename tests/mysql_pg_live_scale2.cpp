@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_scale2.cpp — phases B and C of the scale suite. Separate TU
 // purely for the charter's 1000-line ceiling, exactly as mysql_pg_live_exec5.cpp
 // splits exec4. See mysql_pg_live_scale.h.

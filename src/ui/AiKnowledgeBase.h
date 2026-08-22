@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiKnowledgeBase.h — a per-(connection, database) schema "knowledge base" built once
 // when the user selects a database in the AI chat page, then reused as grounding
 // context for every chat turn (so the model never re-learns the schema per message).

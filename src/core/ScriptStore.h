@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ScriptStore.h — the persisted "saved SQL script library". Each script is a
 // plain .sql file under %APPDATA%/SwiftSQL/scripts/, with owner/exec-user
 // metadata kept in a sibling scripts_index.ini (the file itself is the source of

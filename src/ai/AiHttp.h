@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiHttp.h — the ONE place in SwiftSQL that touches wxWebRequest. An async, streaming
 // HTTP POST engine: it fires a request, pumps raw response text back chunk-by-chunk
 // (for streaming SSE/NDJSON) or hands over the whole body at the end (non-streaming),

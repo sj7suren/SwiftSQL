@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataSync.h — PK-ordered streaming data diff for the cross-database sync suite
 // (see docs/design/cross-db-sync.md §4.5).
 //

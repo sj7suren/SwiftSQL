@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridSql.h — the PURE SQL-text generator behind the result grid.
 //
 // Every statement the data browser can emit is built here, as free functions

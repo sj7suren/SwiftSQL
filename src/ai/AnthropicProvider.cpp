@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AnthropicProvider.cpp — see header. Wire shape (Anthropic Messages API):
 //   POST {baseUrl}/messages   x-api-key: <key>   anthropic-version: 2023-06-01
 //   body  {model, max_tokens, system?, messages:[{role,content}], stream[, temperature]}

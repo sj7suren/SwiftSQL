@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncValueMap.h — cross-engine VALUE conversion for the table-data sync suite
 // (ADR-015 T1). The value-level analogue of SyncTypeMap.h: where SyncTypeMap
 // answers "may this column TYPE be auto-ALTERed?" (TypeVerdict/MayAutoAlter),

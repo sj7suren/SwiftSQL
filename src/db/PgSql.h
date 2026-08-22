@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgSql.h — pure SQL-rendering helpers for the PostgreSQL driver. Dialect-
 // specific but connection-free: they turn normalized schema value objects
 // (SchemaModel.h) into PostgreSQL DDL text. Split out of PgDriver.cpp so that

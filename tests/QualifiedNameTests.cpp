@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QualifiedNameTests.cpp — the identity type's contract.
 //
 // db::QualifiedName replaced a bare `wxString name` as the identity of a table

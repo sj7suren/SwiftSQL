@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlScript.cpp — dialect-aware SQL statement splitter. See SqlScript.h.
 #include "db/SqlScript.h"
 

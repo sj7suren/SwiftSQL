@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sqlite_batch_sync_test.cpp — live proof that SQLite can be an INSERT target
 // for data sync, i.e. that SqliteConnection::ExecuteBatch actually puts bytes
 // into a target file.

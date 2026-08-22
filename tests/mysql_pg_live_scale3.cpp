@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_scale3.cpp — phase D: isolating the target-side read/write
 // collision the scale run exposed. Separate TU for the charter's 1000-line
 // ceiling. See mysql_pg_live_scale.h.

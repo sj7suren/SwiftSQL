@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MermaidRender.cpp — the GUI half of the Mermaid engine: turns a parsed +
 // laid-out graph into a wxBitmap with wxGraphicsContext. The pure logic
 // (parse/rank/layout) lives in MermaidDiagram.cpp; this TU only draws.

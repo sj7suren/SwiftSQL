@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridPanel.h — the shared results/data-browser surface: a grid + messages
 // notebook, an optional right-hand table-info panel, a bottom cell viewer, a
 // data-edit toolbar (edit → INSERT/UPDATE/DELETE diff), sort/hide, filter, form

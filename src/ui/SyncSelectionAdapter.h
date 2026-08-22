@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSelectionAdapter.h — the ONE seam between the data layer's
 // db::sync::RowChangeSet (src/db/RowChange.h, ADR-015 T3) and the compare
 // screen's pure check-state model, ui::SyncSelection (ui/SyncSelection.h, T6).

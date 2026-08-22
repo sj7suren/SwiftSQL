@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MainFrameInternal.h — internal declarations shared across the MainFrame
 // translation units (MainFrame.cpp / MainFrame_Chrome.cpp / MainFrame_Overview.cpp
 // / MainFrame_Query.cpp / MainFrame_Tabs.cpp / MainFrame_Events.cpp). This is NOT a

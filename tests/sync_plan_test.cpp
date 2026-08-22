@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_plan_test.cpp — offline unit tests for the ORCHESTRATION layer:
 // db::sync::SyncEngine::BuildPlan. Its subject is the SyncPlan itself — which
 // units reach it, in what order, what preamble/postamble surrounds them, and

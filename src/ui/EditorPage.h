@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorPage.h — one SQL editor tab: a syntax-highlighted editor (with
 // autocompletion + SQL formatting) atop a shared ResultGridPanel that renders
 // the query result (grid/messages, editing, sort/filter/form, pager, info

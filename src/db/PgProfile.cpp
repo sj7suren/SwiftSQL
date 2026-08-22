@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgProfile.cpp — the PostgreSQL-family DialectProfile (ADR-014 T4), shared by
 // PostgreSQL / KingBase. Inherits SeparateAlterProfile, so each column change is
 // its own statement: Add/Drop are base-owned (uniform ALTER TABLE … ADD/DROP

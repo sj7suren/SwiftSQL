@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCellCompare.cpp — see header. Two layers, the same split SyncValueMap.cpp
 // uses: BuildCompareRules does all the classification once per column;
 // CellsEqual/CompareCells switch on the precomputed CompareOp and derive nothing.

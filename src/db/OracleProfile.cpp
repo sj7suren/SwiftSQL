@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OracleProfile.cpp — the Oracle-family DialectProfile (ADR-014 T5), shared by
 // Oracle and 达梦 DM (compatible DDL surface). Inherits SeparateAlterProfile:
 // Add/Drop are base-owned (uniform ALTER TABLE … ADD/DROP COLUMN). Oracle diverges

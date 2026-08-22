@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionStore.h — persists saved connection profiles to an ini file under
 // the user's data dir. Passwords are encrypted via core::Secret before being
 // written. Profiles are keyed by their (unique) name.

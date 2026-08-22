@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DbTypes.h — supported database engines and their display metadata.
 // The UI (connection dialog, sidebar, icons) is driven entirely by this table:
 // adding a new engine here is the single step that lights it up everywhere.

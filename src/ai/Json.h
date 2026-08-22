@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Json.h — a small, self-contained JSON reader/writer for the AI layer. We parse
 // untrusted network responses (LLM SSE/JSON bodies) and build request bodies, so we
 // want a dependency-free, unit-tested parser rather than pulling a vendored header.

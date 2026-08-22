@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableImport.cpp — the four P0 parsers behind ImportTable.
 //
 // CSV/TXT is a byte-faithful port of ResultGridPanelOps.cpp::ImportCsv (RFC-4180:

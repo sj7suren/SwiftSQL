@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QuerySourceTests.cpp — headless unit tests for ui::qsrc (src/ui/QuerySource
 // .{h,cpp}), which derives the BASE TABLE of an editor SELECT so the result grid
 // can be bound to it for editing.

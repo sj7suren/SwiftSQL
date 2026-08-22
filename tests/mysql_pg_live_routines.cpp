@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_routines.cpp — hazard 7 of the live cross-engine test: the
 // compare-only functions & stored procedures diff (ADR-013), exercised against
 // real MySQL and PostgreSQL catalogs. Driven from mysql_pg_live_test.cpp; split

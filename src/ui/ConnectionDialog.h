@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionDialog.h — Navicat/DBeaver-class connection editor. Engine is fixed
 // (chosen from the menu); the dialog shows it in a header. Tabs: 常规 / 高级 /
 // 数据库 / SSL / SSH / HTTP, with auth-method dropdowns that reveal the relevant

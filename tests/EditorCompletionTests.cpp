@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorCompletionTests.cpp — headless unit tests for ui::editorcomp
 // (src/ui/EditorCompletion.{h,cpp}), the pure decision layer behind the SQL
 // editor's autocompletion popup.

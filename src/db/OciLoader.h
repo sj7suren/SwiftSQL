@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OciLoader.h — runtime dynamic loader for the Oracle Call Interface (OCI).
 //
 // SwiftSQL no longer links oci.lib at build time. Instead the OCI functions the

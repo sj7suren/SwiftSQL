@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ProcessMonitor.h — cross-dialect server-session listing + kill for the 服务器监控
 // tool. These are free functions (not IConnection virtuals) so every engine's session
 // SQL lives in one place and the ceiling-height driver TUs stay untouched — the same

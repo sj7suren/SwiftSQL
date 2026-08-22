@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSelectionAdapterTests.cpp — ADR-015 T6, integration half: exercises
 // ui::MakeTableDiff (src/ui/SyncSelectionAdapter.h) against REAL
 // db::sync::RowChangeSet values (src/db/RowChange.h, T3), then drives the

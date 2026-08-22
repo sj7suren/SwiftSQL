@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiConfig.h — AI provider configuration model, persisted to settings.ini and with
 // the apiKey encrypted at rest via core::Secret (same DPAPI mechanism as connection
 // passwords). Mirrors core::ConnectionProfile's "plain struct + separate Store" style.

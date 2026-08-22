@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRunnerDialog.cpp — see header. Applies a SyncPlan on a worker thread via
 // db::sync::SyncEngine::Execute, mirroring DumpScriptDialog's progress/stop UI.
 #include "ui/SyncRunnerDialog.h"

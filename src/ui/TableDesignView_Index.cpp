@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDesignView_Index.cpp — 索引 tab of the table design view, split out of
 // TableDesignView.cpp per the ≤1000-line charter. The method bodies below are the
 // exact originals; behavior is unchanged. IX_* column tables + IndexModelsEqual are

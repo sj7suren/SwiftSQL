@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ChatTranscript.cpp — implementation of the virtualized, self-drawn chat transcript.
 //
 // See ChatTranscript.h for the "why". Key invariants:

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRoutineCells.cpp — see header.
 #include "ui/SyncRoutineCells.h"
 

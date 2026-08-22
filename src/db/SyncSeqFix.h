@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSeqFix.h — identity/sequence repair postamble for the table-data sync
 // suite (ADR-015 T5).
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorSqlFormat.cpp — implementation of the pure SQL beautifier.
 //
 // Transcribed VERBATIM out of EditorPage::FormatSql when EditorPage.cpp was

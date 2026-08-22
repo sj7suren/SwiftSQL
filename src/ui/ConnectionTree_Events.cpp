@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree_Events.cpp — tree event handlers and the per-node context menu,
 // split out of ConnectionTree.cpp per the ≤1000-line charter (docs/CHARTER.md).
 // The method bodies below are the exact originals; behavior is unchanged. The

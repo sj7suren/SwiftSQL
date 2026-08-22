@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // IAiProvider.h — the provider seam. A provider is a PURE translator for one API
 // family: it turns an AiRequest into an HTTP request spec, and turns response bytes
 // (a streaming SSE/NDJSON event, or a full non-stream body) into normalised deltas.

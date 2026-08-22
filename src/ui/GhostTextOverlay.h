@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // GhostTextOverlay.h — the grey inline suggestion, painted OVER the editor
 // rather than inserted into it.
 //

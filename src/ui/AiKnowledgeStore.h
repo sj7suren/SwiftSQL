@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiKnowledgeStore.h — encrypted, on-disk persistence for a built AiKnowledge.
 //
 // Building a knowledge base is expensive (per-table introspection + an LLM

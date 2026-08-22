@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineExecDialog.h — parameter-entry dialog for 执行 (a stored procedure or
 // function).
 //

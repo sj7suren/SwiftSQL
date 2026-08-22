@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDesignView_Tabs.cpp — the context toolbar, 字段-tab context-menu / clipboard /
 // type-inference operations, the right-hand attribute panel, the edit-model / save /
 // DDL-generation subsystem, 注释 save, and the close / dirty-tracking guards. Split

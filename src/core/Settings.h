@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Settings.h — thin generic accessor to the app-wide settings.ini, the very
 // same file (in the user-data dir) that already persists the UI language. It
 // centralises the user-data-dir path derivation so call sites (Preferences,

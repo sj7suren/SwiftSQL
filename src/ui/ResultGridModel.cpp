@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridModel.cpp — implementation of the pure result-grid model.
 // Widget-free by construction: wxString + std::vector only (see the header).
 #include "ui/ResultGridModel.h"

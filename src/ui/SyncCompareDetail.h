@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareDetail.h — the two side-by-side comparison views that sit in the
 // bottom half of the compare page (T8 of ADR-015), next to the SQL preview:
 //

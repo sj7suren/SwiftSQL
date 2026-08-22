@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // CellViewerPanel.cpp — see header. A read-only wxStyledTextCtrl that renders a
 // single grid cell's value as plain text, a hex dump, pretty-printed JSON/XML,
 // coloured HTML source, or (v1) a short image-detection note.

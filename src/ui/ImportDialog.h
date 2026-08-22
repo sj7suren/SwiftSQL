@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ImportDialog.h — import a data file (CSV/TXT/JSON/XML) into a table, with a
 // config step (file / encoding / target table / error strategy) and a live
 // progress step (gauge, success/failure counters, a per-failure list you can

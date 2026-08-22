@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineNormalize.h — dialect-aware whitespace/comment normalization of stored
 // routine BODIES, for the compare-only functions & procedures diff (ADR-013 Q3).
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ColumnPicker.h — a small reusable searchable column selector.
 //
 // Opened from a sort row's column button (SortPanel). A wxSearchCtrl on top +

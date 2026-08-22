@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OllamaProvider.cpp — see header. Wire shape (Ollama native chat API):
 //   POST {baseUrl}/api/chat   (no auth unless apiKey set → Bearer)
 //   body   {model, messages:[{role,content}], stream}

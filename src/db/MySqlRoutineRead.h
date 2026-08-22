@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlRoutineRead.h — MySQL routine introspection for the compare-only
 // functions & stored procedures diff (ADR-013).
 //

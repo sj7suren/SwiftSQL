@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RowChange.h — the carrier for per-row DATA changes (ADR-015 T3).
 //
 // Replaces SyncPlan::TableUnit's single `dml` wxString, which materializes every

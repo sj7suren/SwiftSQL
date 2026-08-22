@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // FavoriteStore.h — persisted favourite (saved) SQL snippets. Stored in
 // %APPDATA%/SwiftSQL/favorites.ini; the SQL body is base64-encoded so multi-line
 // queries survive the INI format.

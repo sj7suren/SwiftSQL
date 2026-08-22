@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec.cpp — env-gated LIVE EXECUTE/WRITE-PATH integration test.
 //
 // WHY THIS FILE EXISTS. Data sync is held at Beta because it is the only

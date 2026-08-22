@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SchemaDiffGoldenTests.cpp — WP0 characterization tests for the cross-engine
 // sync feature, now carried through A1-A4:
 //

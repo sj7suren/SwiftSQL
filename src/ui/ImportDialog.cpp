@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ImportDialog.cpp — see header. Config page collects file/encoding/target/error
 // strategy; the run page executes parsed-row INSERTs off a worker thread. A .sql
 // file is handed to RunScriptDialog instead of parsed here.

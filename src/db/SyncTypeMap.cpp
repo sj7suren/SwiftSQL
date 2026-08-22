@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTypeMap.cpp — see header. MySQL <-> PostgreSQL canonical type mapping.
 // Pure functions; no connection, no vendor header.
 #include "db/SyncTypeMap.h"

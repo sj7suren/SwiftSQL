@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorTabArt.cpp — see EditorTabArt.h for the design summary.
 //
 // The whole tab is self-drawn (base wxAuiSimpleTabArt::DrawTab is NOT called) so we

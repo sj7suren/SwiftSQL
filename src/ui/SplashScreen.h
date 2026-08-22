@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SplashScreen.h — animated launch / splash window shown before MainFrame.
 //
 // A borderless, always-on-top, rounded 720x460 card drawn entirely with

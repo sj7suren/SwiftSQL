@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserAdmin.cpp — MySQL user / privilege administration, driven entirely through
 // IConnection::Execute (no libmariadb here). See UserAdmin.h for the scope note.
 //

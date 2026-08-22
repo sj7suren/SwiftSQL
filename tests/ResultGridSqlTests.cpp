@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridSqlTests.cpp — headless unit tests for ui::gridsql
 // (src/ui/ResultGridSql.{h,cpp}), the pure SQL-text generator behind the result
 // grid / data browser.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConversationDrawer.h — the left-hand history drawer for the AI chat page.
 //
 // A slim (~220px) white column that lives INSIDE the chat area, left of the

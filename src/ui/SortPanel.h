@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SortPanel.h — a collapsible multi-column sort editor for the data browser.
 //
 // Mirrors FilterPanel's flat pattern (top bar + scrollable row stack + 应用/清除 +

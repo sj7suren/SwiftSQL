@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // NullCellEditor.h — a grid text editor that treats the driver's stringified
 // NULL marker ("NULL", per db::QueryResult) as an EMPTY edit box.
 //

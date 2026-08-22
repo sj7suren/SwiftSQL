@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree_Conn.cpp — connection lifecycle (disconnect / edit / delete /
 // duplicate / colour) and the new-connection entry points, split out of
 // ConnectionTree.cpp per the ≤1000-line charter (docs/CHARTER.md). The method

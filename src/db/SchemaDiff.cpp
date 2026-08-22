@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SchemaDiff.cpp — see header. Pure structural diff; no connection, no wx UI.
 #include "db/SchemaDiff.h"
 #include "db/DialectProfile.h"   // GetDialectProfile(Dialect) + Interpret/Render (A3)

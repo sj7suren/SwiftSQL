@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncComparePage.cpp — see header. Pure composition: splitter, toolbar,
 // grid, detail tabs, and the wiring that keeps them all reading one
 // SyncSelection.

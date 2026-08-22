@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionProfile.h — a database connection's full configuration, covering
 // General / Advanced / Databases / SSL / SSH / HTTP (Navicat/DBeaver-class
 // coverage). Passwords/passphrases are encrypted at rest via core::Secret.

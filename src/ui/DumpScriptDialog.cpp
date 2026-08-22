@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DumpScriptDialog.cpp — see header. The dump body is the same serialization the
 // synchronous ConnectionTree::DumpDatabase used, moved onto a worker thread with
 // progress ticks and a cooperative stop check between tables.

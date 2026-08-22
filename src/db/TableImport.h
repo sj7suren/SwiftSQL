@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableImport.h — pure parsing of the P0 text formats (CSV / TXT / JSON / XML)
 // back into columns + string rows. This is the inverse of TableExport and the
 // "read format" half of the import/export split: it turns file *content* into

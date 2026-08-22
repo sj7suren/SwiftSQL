@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiHttp.cpp — see AiHttp.h. The whole wxWebRequest lifecycle lives here, behind a
 // pimpl so no other translation unit ever sees wx::net types.
 #include "ai/AiHttp.h"

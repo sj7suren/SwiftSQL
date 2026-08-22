@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // FlatControls.h — small self-drawn, borderless controls shared by the filter and
 // sort panels so both read as a flat "no frame, just text / icon" surface.
 //

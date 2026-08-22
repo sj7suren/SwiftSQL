@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiKnowledgeBase.cpp — two-pass "adversarial self-check" schema knowledge base.
 //
 // Pass 1 (introspection, off the GUI thread): ListTables → per-table GetColumns +

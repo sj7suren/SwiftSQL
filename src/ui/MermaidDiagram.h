@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MermaidDiagram.h — a self-contained, dependency-free engine that renders a
 // subset of Mermaid `flowchart` text to a wxBitmap.
 //

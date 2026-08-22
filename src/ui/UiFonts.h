@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UiFonts.h — shared UI / monospace font helpers used across the ui layer.
 //
 // Fonts are referenced by NAME only; no font files are bundled or redistributed

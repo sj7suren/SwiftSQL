@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorCompletion.cpp — implementation of the pure autocompletion decision
 // layer. Every function here was transcribed out of EditorPage.cpp when that TU
 // was split under the charter's 1000-line ceiling, preserving behaviour

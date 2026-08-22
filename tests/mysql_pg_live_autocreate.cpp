@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_autocreate.cpp — the LIVE proof for cross-engine auto-CREATE-
 // TABLE (A5): a table that exists on the SOURCE and is entirely MISSING on the
 // target is now created on the target in the target's own dialect, then

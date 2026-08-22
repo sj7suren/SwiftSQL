@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AutomationJobDialog.h — create / edit one automation job (name, type, source
 // connection+database, target connection+database for sync jobs, and per-type
 // options). Connection candidates are supplied as name→databases snapshots by

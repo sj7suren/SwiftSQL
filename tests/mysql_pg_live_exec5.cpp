@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec5.cpp — items 3 and 4 of the suite described in
 // mysql_pg_live_exec4.h. Separate TU purely for the charter's 1000-line ceiling.
 

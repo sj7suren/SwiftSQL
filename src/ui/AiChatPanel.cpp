@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiChatPanel.cpp — the AI 助手 chat PAGE (replaces the old "AI 功能建设中" placeholder).
 //
 // Layout (top → bottom):

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRoutineCells.h — the compare grid's cell rendering for the rows that are
 // INFORMATIONAL rather than executable: the 函数 / 存储过程 category headers and
 // the individual routine rows beneath them (ADR-013).

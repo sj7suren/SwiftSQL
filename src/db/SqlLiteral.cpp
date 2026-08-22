@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlLiteral.cpp — RenderLiteral: one typed Cell → dialect SQL literal.
 // The escaping rules are lifted verbatim from MySqlDriver::DumpTableData so the
 // data-sync DML path and the dump path stay byte-for-byte compatible.

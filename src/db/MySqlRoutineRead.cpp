@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlRoutineRead.cpp — see the header. Pure db::IConnection consumer; no
 // MYSQL* handle, no libmariadb include, no DDL rendering.
 #include "db/MySqlRoutineRead.h"

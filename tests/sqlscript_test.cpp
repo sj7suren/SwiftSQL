@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sqlscript_test.cpp — unit tests for db::SplitSqlScript, the dialect-aware SQL
 // statement splitter (src/db/SqlScript.cpp).
 //

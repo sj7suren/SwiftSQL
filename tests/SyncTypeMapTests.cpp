@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTypeMapTests.cpp — standalone unit tests for db::SyncTypeMap (A1 of the
 // cross-engine sync feature), exercised BEFORE it is wired into anything else
 // (DialectProfile::Interpret/Render, SchemaDelta, SyncEngine). Pure value types

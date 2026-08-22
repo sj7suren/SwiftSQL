@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataSync.cpp — see header. Sorted-merge data diff.
 //
 // StreamRows is a *push* API (it calls a sink per row). To lock-step merge two

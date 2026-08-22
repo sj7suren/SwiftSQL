@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgSchemaRead.cpp — see header. Real PostgreSQL introspection driving A2 of
 // the cross-engine sync feature; ColKind assignment delegates to
 // SyncTypeMap::MapPgColKind (A1) instead of the previous permanent

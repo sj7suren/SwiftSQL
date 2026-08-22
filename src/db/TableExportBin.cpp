@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableExportBin.cpp — implementations of XlsxWriter (OOXML/ZIP) and DbfWriter
 // (dBASE III). See TableExportBin.h for the streaming contract and format notes.
 #include "db/TableExportBin.h"

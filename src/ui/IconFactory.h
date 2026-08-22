@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // IconFactory.h — all icons are drawn in pure C++ with wxGraphicsContext.
 // No external image files: keeps the binary self-contained (single-file dist)
 // and icons crisp at any size.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MainFrame_Automation.cpp — the Automation feature: the scheduled-jobs list tab
 // (a reusable ObjectListPanel over core::AutomationStore), the new/edit/delete/run
 // /schedule actions, the headless job runner (reusing db::sync::SyncEngine for the

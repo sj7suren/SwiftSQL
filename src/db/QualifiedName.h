@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QualifiedName.h — the identity of ONE table, honestly shaped for engines that
 // have a schema layer and engines that do not.
 //

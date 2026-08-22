@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserAdmin.h — database user / privilege administration value types + the
 // per-dialect implementation helpers. These are consumed through IConnection's
 // user-admin virtuals (ListUsers / GetUserGrants / SaveUser / DropUser +

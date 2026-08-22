@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgRoutineRead.cpp — see the header, especially the prosrc-vs-
 // pg_get_functiondef argument. Pure db::IConnection consumer; no PGconn*, no
 // libpq include, no DDL rendering.

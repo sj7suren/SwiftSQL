@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareRow.h — the pure, widget-free half of the Navicat-style compare grid
 // (T8 of ADR-015): how one grid ROW is classified (类型 / 状态) and how a
 // db::sync::SyncPlan becomes the ui::CompareResult that SyncSelection adopts.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRunnerDialog.h — execute a pre-built cross-database SyncPlan against the
 // target connection with a live progress UI, so a large sync can't freeze the
 // window. Mirrors DumpScriptDialog's worker/progress/stop machinery.

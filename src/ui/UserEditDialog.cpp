@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserEditDialog.cpp — see UserEditDialog.h. Standard wx controls on the app's
 // white surface; all server work goes through db::IConnection (SaveUser does the
 // CREATE/ALTER + declarative GRANT/REVOKE). Small metadata reads (grants,

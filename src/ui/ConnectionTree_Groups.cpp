@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree_Groups.cpp — 分组管理: user-defined folders in the sidebar, at
 // two levels, sharing one implementation.
 //

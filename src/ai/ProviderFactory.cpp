@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ProviderFactory.cpp — the one place that maps a ProviderKind to a concrete adapter.
 // Declared in IAiProvider.h; keeps AiClient free of any #include of a specific provider.
 //

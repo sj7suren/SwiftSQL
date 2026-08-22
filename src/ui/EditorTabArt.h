@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorTabArt.h — custom wxAui tab art for the central editor notebook
 // (MainFrame::editors_). Fully self-drawn to match the prototype
 // (docs/UI/SwiftSql.dc.html:357-370): a flat 40px grey strip (#EEF0F4) with a 1px

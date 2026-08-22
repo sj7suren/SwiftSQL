@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // FilterPanel.cpp — see header. Navicat-style segmented condition rows with a
 // per-row AND/OR connective; the value is the only inline field, column/operator
 // open a ColumnPicker / wxMenu. BuildWhere groups consecutive AND rows in explicit

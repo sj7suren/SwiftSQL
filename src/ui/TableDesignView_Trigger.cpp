@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDesignView_Trigger.cpp — 触发器 tab of the table design view, split out per the
 // ≤1000-line charter. A master/detail editor: the top is the same always-live grid the
 // 索引/外键 tabs use (序号/名称/时机/事件, timing/event via PopupListCell), the bottom is

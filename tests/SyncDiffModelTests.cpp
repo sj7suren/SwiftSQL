@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncDiffModelTests.cpp — T6 standalone unit tests for ui::BuildDiffTree
 // (src/ui/SyncDiffModel.{h,cpp}), the pure/non-wx tree model behind the
 // diff-review step's categorized tree (T7, SyncDiffPanel). Hand-builds a

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlProfile.cpp — the MySQL-family DialectProfile (ADR-014 T3), shared by
 // MySQL / MariaDB / OceanBase. Inherits InlineAlterProfile, so a whole TableEdit
 // renders to ONE ALTER TABLE with comma-joined ADD/MODIFY/CHANGE/DROP COLUMN

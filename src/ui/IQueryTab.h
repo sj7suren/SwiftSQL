@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // IQueryTab.h — the minimal contract MainFrame::RunSql drives, so one async run
 // path can feed both an SQL editor tab (EditorPage) and a dedicated open-table
 // data tab (TableDataPage). Both own a ResultGridPanel underneath; this interface

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_data_test.cpp — offline unit tests for the COMPARE pass over row data:
 // db::sync::DiffAndEmitData (the PK-ordered streaming diff that emits SQL text)
 // and db::sync::DiffRowChanges (the structured pass that emits RowChange values

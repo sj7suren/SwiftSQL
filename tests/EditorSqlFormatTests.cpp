@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorSqlFormatTests.cpp — headless unit tests for ui::editorfmt
 // (src/ui/EditorSqlFormat.{h,cpp}), the pure SQL beautifier behind the editor's
 // 美化 action.

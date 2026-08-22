@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // NewDatabaseDialog.cpp — see header. Field set + candidate values come from the
 // driver's DbCreateCaps; the driver also assembles the (escaped) SQL, so this
 // dialog is pure presentation + linkage.

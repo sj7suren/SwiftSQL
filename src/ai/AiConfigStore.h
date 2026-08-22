@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiConfigStore.h — persists ai::AiSettings (the list of providers + the default
 // selection + the privacy gate) to the shared settings.ini under the user's data
 // dir. Each provider's apiKey is encrypted at rest via core::Secret (AES-GCM on

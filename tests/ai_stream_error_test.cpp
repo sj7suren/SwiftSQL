@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ai_stream_error_test.cpp — every provider must surface an error that arrives
 // INSIDE a 200 stream.
 //

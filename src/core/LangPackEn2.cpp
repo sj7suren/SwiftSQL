@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // LangPackEn2.cpp — English pack, part 2 (spill-over data table). Kept separate
 // from LangPackEn.cpp purely to keep each translation-unit under the 1000-line
 // file limit; Lang.cpp merges kLangPackEn + kLangPackEn2 into the single "en"

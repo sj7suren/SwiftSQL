@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorCompletion.h — the PURE decision layer behind the SQL editor's
 // autocompletion popup: which words are offered, and — given a dot-qualified
 // prefix like `db.` / `table.` / `db.table.` — which schema source answers it.

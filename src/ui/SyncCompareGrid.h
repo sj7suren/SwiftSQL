@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareGrid.h — the Navicat-style compare grid (T8 of ADR-015): the top
 // half of the single-screen 数据同步 compare page.
 //

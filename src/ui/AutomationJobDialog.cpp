@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AutomationJobDialog.cpp — see header. Pure presentation over an AutomationJob
 // value; the connection candidates are name→databases snapshots so the dialog is
 // free of any live db handle.

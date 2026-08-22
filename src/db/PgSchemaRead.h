@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgSchemaRead.h — real PostgreSQL table-structure introspection for the
 // cross-database synchronization suite (A2 of docs/design/cross-db-sync.md).
 // Free functions (not a PgConnection method) so PgDriver.cpp only needs a

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MermaidChat.cpp — see MermaidChat.h. Line-based fence scanner + block renderer.
 #include "ui/MermaidChat.h"
 

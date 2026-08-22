@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ProcessMonitor.cpp — see ProcessMonitor.h. All per-dialect session SQL + kill
 // primitives live here so the driver TUs (several already at the file-size charter
 // ceiling) need no edits.

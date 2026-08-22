@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSqlPreviewPane.h — the 「SQL 预览」 tab of the single-screen compare page
 // (T8 of ADR-015). Read-only SQL text bound to the current selection.
 //

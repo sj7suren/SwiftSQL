@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Secret.h - encrypt/decrypt sensitive strings for at-rest storage.
 // On Windows new secrets are AES-GCM encrypted; the AES master key is protected
 // by DPAPI for the current user. Legacy DPAPI-only tokens still decrypt.

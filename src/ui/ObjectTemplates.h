@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ObjectTemplates.h — CREATE-(OR REPLACE) skeletons and helpers for the
 // view / function / procedure / package object editors. A "新建视图/函数/存储过程/包"
 // menu opens a normal SQL editor tab (EditorPage) prefilled with one of these

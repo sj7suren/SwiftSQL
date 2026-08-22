@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiClient.h — the AI layer's gateway facade. The ui layer talks ONLY to this class:
 // give it an AiProviderConfig at construction and a stream of AiRequest/AiCallbacks at
 // runtime, and it orchestrates the three collaborators behind the seam —

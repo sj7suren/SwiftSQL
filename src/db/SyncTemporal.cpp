@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTemporal.cpp — see header. A hand-written recursive-descent scan rather
 // than wxDateTime::ParseFormat or sscanf: this runs once per temporal cell on a
 // 10M-cell table, must not allocate, must not consult a locale (wxDateTime's

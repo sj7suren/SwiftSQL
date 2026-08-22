@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlServerDriver.cpp — Microsoft SQL Server via the Win32 ODBC API (no vcpkg
 // dependency; links odbc32 + the installed "ODBC Driver 17 for SQL Server").
 // Schema introspection is done through the sys.* catalog views and

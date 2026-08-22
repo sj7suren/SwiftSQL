@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineCompare.h — pure matching + verdict assignment for the functions &
 // stored procedures diff (ADR-013). No I/O: this file never touches an
 // IConnection. The catalog readers (MySqlRoutineRead.h / PgRoutineRead.h) hand

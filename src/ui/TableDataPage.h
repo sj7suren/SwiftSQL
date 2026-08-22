@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDataPage.h — the dedicated "打开表" data browser tab. A thin IQueryTab
 // wrapper around the shared rich ResultGridPanel (DataBrowser preset: toolbar +
 // grid + right info panel + cell viewer + filter/sort/import/export + pager,

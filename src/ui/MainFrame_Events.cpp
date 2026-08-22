@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 #include "ui/MainFrame.h"
 #include "ui/AboutDialog.h"
 #include "ui/AiChatPanel.h"

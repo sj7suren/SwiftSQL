@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConnectionTree.h — owns the sidebar connection tree and the connection
 // lifecycle (add / connect / disconnect / edit / delete / browse schema), so
 // MainFrame stays focused on the frame + query/data views. Extracted per the

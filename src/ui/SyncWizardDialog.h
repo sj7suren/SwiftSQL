@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncWizardDialog.h — the cross-database synchronization wizard (milestone D of
 // docs/design/cross-db-sync.md §2). A wxSimplebook walks the user through:
 //   0  source / target selection   (source prefilled + locked from the entry the

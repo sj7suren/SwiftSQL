@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlScript.h — split a multi-statement SQL script into individual statements,
 // dialect-aware. Pure function, no I/O — so it is unit-testable in isolation.
 //

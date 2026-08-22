@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlErrorDialog.h — a resizable, read-only error viewer.
 //
 // Used when a database operation returns a long/multi-line error the user needs

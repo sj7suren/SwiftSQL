@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTypeMap.h — cross-engine (MySQL <-> PostgreSQL) column type mapping for
 // the cross-database synchronization suite (see docs/design/cross-db-sync.md).
 //

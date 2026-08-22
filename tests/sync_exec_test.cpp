@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_exec_test.cpp — offline unit tests for the WRITE pass:
 // db::sync::ExecuteDataSync and the delete gate it makes structural
 // (AuthorizeDeletes / TableDataSpec).

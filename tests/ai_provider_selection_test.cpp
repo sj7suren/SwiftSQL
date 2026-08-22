@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ai_provider_selection_test.cpp — which provider the AI features actually talk to,
 // and when a cached client has to be thrown away.
 //

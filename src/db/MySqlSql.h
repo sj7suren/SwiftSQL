@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlSql.h — pure SQL-rendering helpers for the MySQL driver. Dialect-specific
 // but connection-free: they turn normalized schema value objects (SchemaModel.h)
 // into MySQL DDL text and vice-versa. Split out of MySqlDriver.cpp so that file

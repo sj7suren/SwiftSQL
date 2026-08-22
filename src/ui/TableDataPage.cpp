@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableDataPage.cpp — see header. A thin IQueryTab wrapper hosting the shared
 // ResultGridPanel in its DataBrowser preset, with a bottom read-only line that
 // echoes the paged SELECT the pager/filter/sort stage. All the data-browser

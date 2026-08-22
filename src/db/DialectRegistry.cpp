@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DialectRegistry.cpp — the GetDialectProfile(DbType) factory (ADR-014 T6). Maps
 // each DbType to a per-DbType-family singleton profile, mirroring
 // CreateConnection(DbType). All five families now have real profiles (T3/T4/T5):

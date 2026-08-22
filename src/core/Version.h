@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // Version.h — SINGLE SOURCE OF TRUTH for the product version.
 //
 // Included by BOTH the C++ display code (core/AppVersion.h → splash / About) AND the

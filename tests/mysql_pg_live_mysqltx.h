@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_mysqltx.h — shared harness for the MySQL-target TRANSACTION
 // INTEGRITY suite. Split across two TUs purely for the charter's 1000-line
 // ceiling, same reason mysql_pg_live_exec2/3/5.cpp exist; there is no second

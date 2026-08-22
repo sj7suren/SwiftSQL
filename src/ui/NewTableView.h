@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // NewTableView.h — the 新建表 (create-table) designer. Subclasses TableDesignView to
 // reuse ALL of its tabs/grids/cells, overriding only the create-specific behaviour:
 // no ⑦TABLE DDL tab, the ⑥DDL 预览 renders CREATE TABLE (not ALTER), and 保存 prompts

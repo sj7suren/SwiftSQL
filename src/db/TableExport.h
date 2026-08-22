@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableExport.h — pure, streaming serialization of tabular data into the P0 text
 // formats (CSV / TXT / JSON / XML / SQL-INSERT). This is the "write format" half
 // of the import/export split: a worker pulls rows from a driver (the "take data"

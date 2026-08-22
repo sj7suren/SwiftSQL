@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCrossEngineGate.cpp -- see header. Body moved verbatim from
 // SyncWizardDialog.cpp's former anonymous-namespace definition.
 #include "ui/SyncCrossEngineGate.h"

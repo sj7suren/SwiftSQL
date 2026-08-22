@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AnthropicProvider.h — adapter for Anthropic's Messages API (Claude). Differs from
 // the OpenAI shape in three ways this adapter absorbs: System turns are hoisted to a
 // top-level `system` field (messages[] holds only user/assistant), `max_tokens` is

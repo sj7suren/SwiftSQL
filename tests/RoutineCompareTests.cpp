@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineCompareTests.cpp — db::sync::CompareRoutines + the matching key
 // (src/db/RoutineCompare.{h,cpp}, ADR-013), the pure decision layer of the
 // compare-only functions & stored procedures diff.

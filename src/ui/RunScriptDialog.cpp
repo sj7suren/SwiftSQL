@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RunScriptDialog.cpp — see header. Config page collects file + encoding +
 // error-handling; the run page shows live progress off a worker thread.
 #include "ui/RunScriptDialog.h"

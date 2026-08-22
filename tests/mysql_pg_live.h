@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live.h — shared harness for the live MySQL → PostgreSQL cross-engine
 // integration test. Split out (with mysql_pg_live_routines.cpp) purely to keep
 // every TU under the charter's 1000-line ceiling; there is no second consumer.

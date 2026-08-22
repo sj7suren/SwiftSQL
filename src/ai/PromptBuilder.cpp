@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PromptBuilder.cpp — the pure, unit-testable assembly of a use-case + AiContext
 // + the user's words into messages[]. No I/O, no wx GUI, no provider knowledge.
 //

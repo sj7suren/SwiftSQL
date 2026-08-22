@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncWizardHook.cpp — the wizard's SCRIPTED VERIFICATION HOOK, kept out of
 // SyncWizardDialog.cpp because that TU is at 880 lines against the charter's
 // 1000-line cap and this hook is a self-contained subject: it is the only code

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MainFrame_Scripts.cpp — the saved-SQL script library wiring: the reusable
 // library tab (a ScriptLibraryPanel in editors_), the Ctrl+S save flow for plain
 // SQL editors (SaveEditorScript), and opening a stored script back into a fresh

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_scale.cpp — the harness, the memory instrumentation, and
 // phase A (the flatness curve). See mysql_pg_live_scale.h for why this suite
 // exists and why it has its own opt-in gate.

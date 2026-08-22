@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ExportDialog.h — export the data browser's rows to a file (CSV/TXT/JSON/XML/SQL)
 // with a config step (scope / format / path / options) and a live progress step
 // (gauge + row counter + log). The write runs on a worker thread so a large

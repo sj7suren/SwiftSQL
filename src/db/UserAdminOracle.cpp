@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // UserAdminOracle.cpp — Oracle Database / 达梦(DM) user administration, driven
 // through IConnection::Execute. Shared by BOTH Oracle drivers (the native OCI
 // OracleOciConnection and the ODBC DmConnection — both report Dialect::Oracle and

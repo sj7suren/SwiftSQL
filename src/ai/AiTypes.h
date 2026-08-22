@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiTypes.h — the AI layer's internal domain model (the "anti-corruption layer"
 // vocabulary). Every provider adapter translates an external API's shapes to/from
 // these types, so the rest of SwiftSQL only ever sees AiRequest / AiChunk / AiError

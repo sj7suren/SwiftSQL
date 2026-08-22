@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncTemporal.h — the NEUTRAL COMPARISON FORM for date/time/timestamp cells.
 //
 // ---- the defect this exists to fix ----------------------------------------

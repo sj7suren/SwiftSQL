@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OpenAiCompatProvider.cpp — see header. Wire shape (OpenAI Chat Completions):
 //   POST {baseUrl}/chat/completions   Authorization: Bearer <key>
 //   body  {model, messages:[{role,content}], stream, max_tokens[, temperature]}

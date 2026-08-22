@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OracleDriver.cpp — 达梦 DM (an Oracle-compatible engine) over the Win32 ODBC
 // wide API. No vcpkg / OCI dependency: links odbc32 only, and talks to the
 // "DM8 ODBC DRIVER" the user installs at runtime. Modelled on SqlServerDriver.cpp.

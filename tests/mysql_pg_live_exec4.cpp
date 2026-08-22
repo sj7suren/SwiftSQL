@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec4.cpp — see mysql_pg_live_exec4.h for why this suite exists.
 //
 // This TU carries the harness (main, provisioning, the cancellable run) plus

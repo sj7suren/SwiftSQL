@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorPageObject.cpp — second translation unit for ui::EditorPage: everything
 // that turns a plain SQL tab into an OBJECT EDITOR (新建/修改 视图·函数·存储过程·包).
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec2.cpp — second half of the LIVE EXECUTE/WRITE-PATH suite.
 // See mysql_pg_live_exec.cpp's header for why this suite exists and what its
 // standing rule is (every assertion reads the TARGET back). Split across two

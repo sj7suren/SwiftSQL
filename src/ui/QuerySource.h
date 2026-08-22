@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QuerySource.h — deriving the BASE TABLE of an editor SELECT, honestly.
 //
 // ===========================================================================

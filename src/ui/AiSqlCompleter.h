@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiSqlCompleter.h - AI-backed SQL continuation for wxStyledTextCtrl.
 //
 // IT NO LONGER OWNS ANY UI. It used to open Scintilla's autocomplete list with

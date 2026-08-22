@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_fkrestore.cpp — LIVE proof that a MySQL target's session is left
 // CLEAN after a sync run, on every exit path.
 //

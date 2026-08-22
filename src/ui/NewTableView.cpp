@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // NewTableView.cpp — see NewTableView.h. Overrides only the create-specific behaviour;
 // everything else (the field/index/FK/trigger/option/comment tabs, grids, cells, dirty
 // tracking, close guard) is inherited from TableDesignView unchanged.

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCellCompare.h — dialect-aware CELL COMPARISON for the sorted-merge data
 // diff (ADR-015 T2/T10). The comparison-side counterpart of SyncValueMap.h.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineCompare.cpp — see the header. Pure: no IConnection, no globals.
 #include "db/RoutineCompare.h"
 

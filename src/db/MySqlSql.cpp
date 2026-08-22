@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlSql.cpp — implementations of the connection-free MySQL SQL-rendering
 // helpers declared in MySqlSql.h. Moved verbatim out of MySqlDriver.cpp; behavior
 // is unchanged.

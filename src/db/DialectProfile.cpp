@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DialectProfile.cpp — the Template-Method shells for ADR-014's dialect field
 // editor. This unit owns the whole-ALTER assembly (looping a TableEdit, wrapping
 // clauses in ALTER TABLE) and the non-virtual metadata helpers; the per-clause

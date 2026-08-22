@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec4.h — shared harness for the SCHEMA-AWARE WRITE, CANCEL,
 // CONNECTION-LOSS and FK-ORDERING live suite.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiContextBuilder.h — assembles the COMPACT schema signature the AI dialog hands
 // to ai::PromptBuilder (ai::AiContext::schemaText). One line per table:
 //

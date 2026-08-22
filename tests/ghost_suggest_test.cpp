@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ghost_suggest_test.cpp — unit tests for ui::ghost::LocalSkeleton, the LOCAL
 // tier of the editor's grey inline suggestion.
 //

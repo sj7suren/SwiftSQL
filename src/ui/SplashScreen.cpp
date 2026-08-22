@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SplashScreen.cpp — see SplashScreen.h.
 //
 // Layout / colour spec mirrors docs/UI/SwiftSql.dc.html §02 (720x460 card):

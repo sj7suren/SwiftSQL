@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRowSelectionTests.cpp — the two functional gaps this round closed on the
 // data-sync compare screen, both of which sit directly on the user's wording:
 //

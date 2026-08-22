@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SshTunnel.h — an SSH local port-forward. When a connection profile has SSH
 // enabled, Open() dials the SSH host, authenticates, and starts forwarding a
 // local 127.0.0.1:<port> to the real database host:port through the SSH channel.

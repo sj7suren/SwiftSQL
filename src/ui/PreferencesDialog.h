@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PreferencesDialog.h — 偏好设置 / Preferences.
 //   • Language (中文/English)
 //   • Oracle client (OCI dynamic library) path — runtime-loaded oci.dll.

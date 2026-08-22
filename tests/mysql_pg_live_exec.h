@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_exec.h — shared harness for the LIVE EXECUTE/WRITE-PATH suite.
 //
 // The cross-engine compare suite (mysql_pg_live.h + its two TUs) proved the READ

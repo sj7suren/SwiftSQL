@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OllamaProvider.h — adapter for a local Ollama server's NATIVE chat API (kind
 // OllamaNative), as opposed to its OpenAI-compatible /v1 shim (which OpenAiCompat
 // handles). Two shape differences this adapter absorbs: the stream is newline-

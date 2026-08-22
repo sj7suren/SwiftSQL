@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ExportDialog.cpp — see header. Config page collects scope/format/path/options;
 // the run page streams the write off a worker thread. Format serialization is
 // delegated to db::TableWriter (TableExport.h) — this file only takes rows from

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QueryBuilderModel.h — the pure data + SQL-generation core of the visual query
 // builder (QueryBuilderPanel). Deliberately UI-free (no wxWindow, only wxRect for
 // canvas geometry) so BuildSql() is a single, side-effect-free function that can be

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorSqlFormat.h — the PURE SQL beautifier behind the editor's 美化 action.
 //
 // This is the whole of what the 美化/格式化 button does, as one free function

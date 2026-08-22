@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncComparePage.h — the single-screen data-sync compare page (T8 of ADR-015).
 // This is the page the user's requirement describes end to end:
 //

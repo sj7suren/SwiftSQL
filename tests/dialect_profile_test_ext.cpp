@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // dialect_profile_test_ext.cpp — table-scope half of the golden-DDL DialectProfile
 // suite (see dialect_profile_test.cpp for the suite rationale). This translation
 // unit carries the table-level tests — indexes, foreign keys, table options, table

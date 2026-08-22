@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareReentryTest.cpp — regression test for the P0 compare→display crash.
 //
 // THE BUG: ui::SyncCompareGrid populates its wxDataViewCtrl by calling

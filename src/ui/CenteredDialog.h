@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // CenteredDialog.h — a wxDialog that always shows in the middle of the screen.
 //
 // Every modal dialog in SwiftSQL derives from this instead of wxDialog, so

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // PgStream.cpp — see header. Byte-order ORDER BY (ADR-015 T2 defense 1) +
 // parameterized batch INSERT (T4) for the libpq driver.
 #include "db/PgStream.h"

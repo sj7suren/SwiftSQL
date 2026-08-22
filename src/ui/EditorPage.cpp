@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // EditorPage.cpp — the SQL editor tab itself: construction, the IQueryTab
 // surface MainFrame drives, autocompletion wiring, and key routing.
 //

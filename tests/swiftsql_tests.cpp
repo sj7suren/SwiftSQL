@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // swiftsql_tests.cpp — unit tests for the BINARY export writers
 // (db::XlsxWriter / db::DbfWriter, src/db/TableExportBin.cpp) plus a compact set
 // of text export→import round-trips (CSV / JSON / XML).

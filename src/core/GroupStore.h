@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // GroupStore.h — user-defined GROUPS (folders) for things the sidebar tree
 // shows, persisted to groups.ini under the user's data dir.
 //

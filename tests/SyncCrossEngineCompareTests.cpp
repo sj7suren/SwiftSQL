@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCrossEngineCompareTests.cpp — the data diff must compare cells the way the
 // two ENGINES mean them, not the way their drivers spell them.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DesignGridCells.h — owner-drawn cell widgets shared by TableDesignView's
 // always-live design grids (字段 / 索引 / 外键 tabs). Extracted verbatim from
 // TableDesignView.cpp (charter: single file ≤1000 lines) so the field / index / fk

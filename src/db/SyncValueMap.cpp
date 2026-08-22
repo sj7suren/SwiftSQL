@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncValueMap.cpp — see header. Cross-engine cell VALUE conversion.
 //
 // Two-layer split, and the reason for it: everything expensive (rawType parsing,

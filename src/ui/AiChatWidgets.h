@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiChatWidgets.h — small self-drawn, borderless controls shared by the AiChatPanel
 // translation units (AiChatPanel.cpp, AiChatPanel_Turn.cpp). Split out of
 // AiChatPanel.cpp so the same painted controls can be constructed from more than one

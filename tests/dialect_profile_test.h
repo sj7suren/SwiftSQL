@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // dialect_profile_test.h — shared harness + render helpers for the golden-DDL
 // DialectProfile unit tests (see dialect_profile_test.cpp for the suite rationale).
 // This header carries the assert loop (g_checks/g_fails), the U8/Expect* helpers,

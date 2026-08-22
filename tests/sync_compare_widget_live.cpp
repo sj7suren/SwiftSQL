@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_compare_widget_live.cpp — env-gated LIVE GUI reproduction driver for the
 // P0 compare->display crash. Unlike sync_compare_live (headless model only),
 // this creates the REAL wxDataViewCtrl widget (ui::SyncComparePage) in a real

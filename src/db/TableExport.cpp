@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableExport.cpp — the five P0 format writers behind TableWriter.
 //
 // Each arm is pure text assembly over one row at a time; the class glues rows

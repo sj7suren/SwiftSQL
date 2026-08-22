@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncWizardDialog.cpp — see header. Four-page wxSimplebook (three numbered
 // steps plus a transient progress page) driving the cross-database sync suite.
 // The compare step runs SyncEngine::BuildPlan on a worker thread (cancellable);

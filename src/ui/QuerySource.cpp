@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QuerySource.cpp — see QuerySource.h for why this exists and what it refuses.
 #include "ui/QuerySource.h"
 

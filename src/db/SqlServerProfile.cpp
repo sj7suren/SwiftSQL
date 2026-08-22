@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqlServerProfile.cpp — the SQL Server DialectProfile (ADR-014 T5). Inherits
 // SeparateAlterProfile: Add/Drop are base-owned (uniform ALTER TABLE … ADD/DROP
 // COLUMN). A Modify is where T-SQL diverges most and is why ADR-014 #4 hands the

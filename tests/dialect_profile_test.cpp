@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // dialect_profile_test.cpp — golden-DDL unit tests (a fitness function) for the
 // five ADR-014 DialectProfile implementations (MySql / Pg / Sqlite / SqlServer /
 // Oracle). For each dialect we take the profile from GetDialectProfile(DbType),

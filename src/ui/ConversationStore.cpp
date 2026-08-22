@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ConversationStore.cpp — see header. JSON-serialise a Conversation, encrypt the
 // whole blob with core::EncryptSecret, and store it as a base64 token file under
 // <UserDataDir>/chats/<id>.dat. Load reverses that. We reuse the AI layer's

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCompareSession.h — the widget-free MODEL half of the data-sync compare
 // screen: the borrowed SyncPlan, the DiffTree built from it, the SyncSelection
 // the user's gestures mutate, and the two execution artefacts those three

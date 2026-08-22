@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncSelection.cpp — see header. Pure logic, no I/O, no wx widgets.
 #include "ui/SyncSelection.h"
 

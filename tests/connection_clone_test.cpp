@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // connection_clone_test.cpp — self-contained, zero-config unit test for
 // db::CloneConnection and IConnection::EffectiveProfile() (src/db/ConnectionClone.*,
 // src/db/DbDriver.h). No live network DB needed — mirrors sqlite_live_test.cpp's

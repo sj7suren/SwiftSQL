@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRoutineTreeTests.cpp — ui::MakeRoutineCategoryNode / BuildDiffTree's
 // routine half (src/ui/SyncDiffModel.{h,cpp}, ADR-013): the pure model behind
 // the 函数 / 存储过程 categories the compare grid renders.

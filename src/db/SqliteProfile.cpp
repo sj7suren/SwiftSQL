@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqliteProfile.cpp — the SQLite DialectProfile (ADR-014 T5). Inherits
 // SeparateAlterProfile: Add/Drop are base-owned (uniform ALTER TABLE … ADD/DROP
 // COLUMN). SQLite's ALTER is deliberately minimal — it supports only ADD COLUMN and

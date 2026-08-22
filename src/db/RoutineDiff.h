@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RoutineDiff.h — the carrier for the functions & stored procedures DIFF
 // (ADR-013). Compare and display ONLY.
 //

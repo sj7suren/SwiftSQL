@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SseParser.cpp — implementation of the incremental stream framer declared in SseParser.h.
 //
 // The transport decodes bytes to a wxString before calling Feed(), so at this layer a

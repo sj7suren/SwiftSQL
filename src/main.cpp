@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // main.cpp — SwiftSQL application entry point.
 #include <wx/wx.h>
 #include <wx/image.h>

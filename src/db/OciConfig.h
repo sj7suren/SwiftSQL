@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // OciConfig.h — public, vendor-free configuration surface for the runtime OCI
 // loader. Declares only wxString-based entry points, so UI code (Preferences)
 // and app-startup re-hydration can configure & probe the Oracle client WITHOUT

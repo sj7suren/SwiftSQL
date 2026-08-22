@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // CrashDialog.h — the friendly face of the crash safety net.
 //
 // Shown on the MAIN THREAD only (it builds real wx controls). Two moods:

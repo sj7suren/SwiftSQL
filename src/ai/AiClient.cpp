@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiClient.cpp — see AiClient.h. Orchestration only; no I/O, no framing, no vendor JSON
 // live here — those belong to AiHttp, SseParser and the providers respectively.
 #include "ai/AiClient.h"

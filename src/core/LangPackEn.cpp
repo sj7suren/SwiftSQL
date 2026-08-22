@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // LangPackEn.cpp — built-in English language pack (pure data). Maps each
 // Chinese source string to its English translation, as a flat
 // {source, translation, …, nullptr} array. Add a new in-code language by

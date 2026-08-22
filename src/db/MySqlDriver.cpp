@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlDriver.cpp — MySQL + OceanBase connection over the MySQL wire protocol
 // (libmariadb). OceanBase's MySQL mode speaks this protocol natively, so both
 // engines share this implementation.

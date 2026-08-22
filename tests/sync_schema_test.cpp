@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sync_schema_test.cpp — offline unit tests for the STRUCTURAL half of the
 // cross-database synchronization suite: db::sync::DiffSchema, a pure function
 // over TableSchema value objects. Nothing here builds a plan, streams a row or

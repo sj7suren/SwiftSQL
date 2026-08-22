@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncDiffModel.h — pure, non-wx tree model for the sync wizard's diff-review
 // step (T6 of the cross-engine sync feature). Builds a categorized DiffNode
 // tree from a db::sync::SyncPlan: Category -> Table -> Column/Index/Constraint.

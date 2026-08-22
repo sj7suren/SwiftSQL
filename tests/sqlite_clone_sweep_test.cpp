@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // sqlite_clone_sweep_test.cpp — PROBE/REGRESSION for the target-read clone on
 // SQLite.
 //

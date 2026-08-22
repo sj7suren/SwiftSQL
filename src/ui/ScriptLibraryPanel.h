@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ScriptLibraryPanel.h — the "已保存 SQL 脚本库" tab: a report-style list of every
 // script saved via Ctrl+S in a plain SQL editor. Columns: 名称 / 文件大小 /
 // 创建时间 / 修改时间 / 归属用户 / 执行用户. Double-click or right-click ▸ 打开 opens

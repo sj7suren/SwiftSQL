@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncCrossEngineGate.h -- the wizard-entry cross-engine policy gate, factored
 // out of SyncWizardDialog.cpp (where it used to be an anonymous-namespace
 // free function) into its own pure, non-wx translation unit so it can be

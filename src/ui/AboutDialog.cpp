@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AboutDialog.cpp — see AboutDialog.h. Built from wxDialog + vertical sizers,
 // white background, ui::Ui() fonts, in the CrashDialog visual style. The donate
 // path opens a small secondary DonateDialog showing the

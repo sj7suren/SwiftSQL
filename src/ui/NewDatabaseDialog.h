@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // NewDatabaseDialog.h — engine-adaptive "new database" editor. The field set is
 // built at runtime from the driver's DbCreateCaps (charset/collation for MySQL;
 // owner/encoding/locale/template/tablespace/conn-limit for PostgreSQL; bare name

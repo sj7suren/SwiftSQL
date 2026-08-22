@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ErDiagramView.h — entity-relationship diagram, hand-drawn on a scrolled
 // canvas with wxGraphicsContext (per docs/UI's "ER 关系图" board):
 // entity cards with PK/FK-marked columns + foreign-key connector lines.

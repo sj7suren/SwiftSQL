@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // json_test.cpp — unit tests for ai::JsonValue (parser + accessors) and ai::JsonWriter.
 //
 // Same dependency-free harness as tableio_test.cpp: a tiny assert loop, no framework.

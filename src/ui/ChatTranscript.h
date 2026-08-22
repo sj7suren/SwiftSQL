@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ChatTranscript.h — a self-drawn, VIRTUALIZED chat transcript control.
 //
 // The old transcript stacked native child windows — every message was 4 HWNDs

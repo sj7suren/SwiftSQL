@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DumpScriptDialog.h — export a database's schema (+ optional data) to a .sql
 // file with a live progress UI, so a large dump can't freeze the window.
 //

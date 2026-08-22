@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // QueryBuilderPanel.cpp — the visual query builder UI. QbCanvas (below) is the
 // self-drawn, scrolled table-box surface; QueryBuilderPanel wires the left table
 // list + bottom SQL preview around it. All geometry is in logical (unscrolled)

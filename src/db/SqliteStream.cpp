@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SqliteStream.cpp — see header. Parameterized batch INSERT (ADR-015 T4) for the
 // SQLite driver, i.e. the apply half that lets a SQLite file be a sync target.
 #include "db/SqliteStream.h"

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SchemaDiff.h — pure, dialect-aware structural diff for the cross-database
 // synchronization suite (see docs/design/cross-db-sync.md §4.3–§4.4).
 //

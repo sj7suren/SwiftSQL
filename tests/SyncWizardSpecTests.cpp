@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncWizardSpecTests.cpp — the LAST layer of the sync feature that was
 // verified only by argument: the compare screen's own construction of what will
 // execute.

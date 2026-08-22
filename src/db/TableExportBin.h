@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableExportBin.h — streaming writers for the two BINARY export formats,
 // Excel (.xlsx) and dBASE (.dbf). These are the binary counterpart to the text
 // TableWriter (TableExport.h): where that arm streams wxString through an

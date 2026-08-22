@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // RowChange.cpp — see header. The builder is the whole safety story: it is the
 // only code in the tree that may construct a RowChange, and it refuses to do so
 // for any row containing a !MayEmit cell.

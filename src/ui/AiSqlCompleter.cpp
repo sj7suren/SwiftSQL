@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // AiSqlCompleter.cpp - lightweight AI continuation for every SQL editor surface.
 #include "ui/AiSqlCompleter.h"
 

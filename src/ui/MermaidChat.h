@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MermaidChat.h — the thin bridge between an AI chat reply and the Mermaid engine.
 //
 // The engine (MermaidDiagram.h / MermaidRender.cpp) is pure "text → bitmap". This

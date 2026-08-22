@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SseParser.h — incremental framing for streaming LLM responses. HTTP chunks do NOT
 // arrive on line/event boundaries (a "data:" line can be split across two reads, a
 // multi-byte UTF-8 char can be halved), so we buffer and emit only COMPLETE payloads.

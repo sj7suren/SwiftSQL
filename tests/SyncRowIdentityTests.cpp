@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SyncRowIdentityTests.cpp — the two things a db::sync::RowChange must carry
 // besides the values it will write: what was there BEFORE, and WHICH row it is.
 //

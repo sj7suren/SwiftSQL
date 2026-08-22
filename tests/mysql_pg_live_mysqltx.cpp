@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // mysql_pg_live_mysqltx.cpp — TRANSACTION INTEGRITY AGAINST A **MySQL** TARGET.
 //
 // ---------------------------------------------------------------------------

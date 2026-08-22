@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ResultGridPanelOps.cpp — second translation unit for ResultGridPanel: the
 // grid's OPERATIONS — keyboard routing, selection, the context menus, the
 // clipboard, import/export packaging, and the sort/filter application funnel.

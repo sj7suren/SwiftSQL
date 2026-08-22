@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // FilterPanel.h — a Navicat-style column filter: a stack of segmented condition
 // rows, each `☑ 启用 | [列 ▾] | [运算符 ▾] | ⟨值⟩ | and/or | + () ×`. The value is
 // the only true inline field; column and operator open pickers (ColumnPicker /

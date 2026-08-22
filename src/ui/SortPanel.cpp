@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // SortPanel.cpp — see header. A scrollable stack of sort rows (column · direction ·
 // priority), an 应用/清除 bar, and a read-only ORDER BY preview — all flat controls
 // (shared FlatControls). The per-row column field opens the searchable ColumnPicker

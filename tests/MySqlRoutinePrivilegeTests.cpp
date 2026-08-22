@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // MySqlRoutinePrivilegeTests.cpp — DEF-R3-02: an empty MySQL routine list is
 // AMBIGUOUS, and MySqlRoutineRead's resolution of that ambiguity.
 //

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // DataSyncExec.h — the APPLY half of cross-engine data sync (ADR-015 T10).
 //
 // ---------------------------------------------------------------------------

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // TableInfoPanel.h — the right-hand Navicat-style table-info panel: a fixed list
 // of 14 metadata fields (行数 / 引擎 / 数据长度 / …) populated from a
 // db::TableDetail. Extracted from EditorPage so ResultGridPanel stays under the

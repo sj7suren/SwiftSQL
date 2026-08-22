@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // CrashLog.h — process-wide crash safety net.
 //
 // SwiftSQL runs DB work on ~11 worker threads. An uncaught exception on any of

@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // ObjectTemplates.cpp — see ObjectTemplates.h.
 #include "ui/ObjectTemplates.h"
 

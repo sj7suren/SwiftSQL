@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 SwiftSQL Contributors
+
 // tableio_test.cpp — unit tests for db::TableExport (the five P0 format writers)
 // and db::TableImport (the four P0 parsers), plus export→import round-trips.
 //
