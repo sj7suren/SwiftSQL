@@ -3,8 +3,32 @@
 
 Build:     Release x64 (MSVC, vcpkg x64-windows-static, static CRT /MT)
 Version:   1.1.20
-Licence:   Apache License 2.0 (see LICENSE at the repository root)
-Copyright: Copyright (c) 2026 SwiftSQL Contributors
+Licence:   GNU GPL v3.0 or later (see LICENSE at the repository root)
+Copyright: Copyright (C) 2026 SwiftSQL Contributors
+Source:    https://github.com/sj7suren/SwiftSQL
+
+GPLv3 requires that binaries be accompanied by the corresponding source. Every
+third-party component below is GPLv3-compatible; the OpenSSL note under
+"Licence compatibility" explains why this project is GPLv3 and not GPLv2.
+
+--------------------------------------------------------------------------
+Licence compatibility
+--------------------------------------------------------------------------
+  wxWidgets 3.2.9        wxWindows Library Licence 3.1 (LGPL + binary exception)
+  OpenSSL 3.x            Apache-2.0   <-- incompatible with GPLv2, fine under v3
+  MariaDB Connector/C    LGPL-2.1
+  PostgreSQL libpq       PostgreSQL License (BSD-style)
+  SQLite                 Public Domain
+  libssh2                BSD-3-Clause
+  zlib / lz4             zlib / BSD-2-Clause
+
+OpenSSL is statically linked into the exe, so its licence cannot be avoided by
+not shipping a DLL. Apache-2.0's patent-termination clause is incompatible with
+GPLv2 but compatible with GPLv3 -- which is why GPLv2 was not an option here.
+
+The Oracle Instant Client SDK is proprietary and is NOT distributed with this
+repository or with the installer. It is used only at compile time, on the
+machine of whoever chooses to build the optional Oracle driver.
 
 --------------------------------------------------------------------------
 SwiftSQL.exe — self-contained, no C++ runtime required
