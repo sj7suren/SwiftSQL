@@ -85,21 +85,30 @@ vcpkg install libmariadb:x64-windows-static libpq:x64-windows-static \
               sqlite3:x64-windows-static  libssh2:x64-windows-static
 ```
 
-### 2. 准备 Oracle OCI 头文件 ⚠️
+### 2.（可选）启用 Oracle 原生驱动
 
-**当前这一步是必需的，即使你不打算使用 Oracle。** `src/db/OciLoader.h` 无条件 `#include <oci.h>`，缺少它会导致编译失败。
+**不需要 Oracle 的话跳过这一步即可，项目正常构建。**
 
-从 Oracle 官网下载 **Instant Client SDK**（仅需头文件，不需要运行库），解压到：
+Oracle 的 `<oci.h>` 是编译期必需的厂商头文件，而其许可条款不允许随仓库再分发，因此仓库里没有它。构建系统会自动探测：**找不到 SDK 就跳过 OCI 驱动，其余引擎全部照常工作**，Oracle 在应用内报告为不可用。配置阶段会明确打印当前状态：
 
 ```
-third_party/instantclient_23_5/sdk/include/oci.h
+-- SwiftSQL: Oracle OCI driver ENABLED  (SDK: .../third_party/instantclient_23_5/sdk)
+-- SwiftSQL: Oracle OCI driver DISABLED - no Instant Client SDK found. ...
 ```
 
-该目录被 `.gitignore` 排除——Oracle 的许可条款不允许随仓库再分发其 SDK。
+要启用，从 Oracle 官网下载 **Instant Client SDK**（只需头文件，不需要运行库），解压到 `third_party/` 下让其自动识别：
 
-> 说明：SwiftSQL **不链接** `oci.lib`，所有 OCI 函数都在运行时经 `LoadLibrary`/`GetProcAddress` late-bind（见 `src/db/OciLoader.cpp`），所以构建产物在没有 Oracle 客户端的机器上照样能跑。这里需要的仅仅是编译期的类型与常量定义。
->
-> 让 Oracle 变成可选的 CMake 开关是明确的改进方向，见[已知限制](#已知限制)。
+```
+third_party/instantclient_<版本>/sdk/include/oci.h
+```
+
+或指定任意路径：
+
+```bash
+cmake -S . -B build -DSWIFTSQL_OCI_SDK=<含 include/oci.h 的目录>
+```
+
+> 说明：SwiftSQL **不链接** `oci.lib`，所有 OCI 函数都在运行时经 `LoadLibrary`/`GetProcAddress` late-bind（见 `src/db/OciLoader.cpp`），所以启用 OCI 构建出的产物，在没有安装 Oracle 客户端的机器上照样能跑——用户届时自行放入 `oci.dll` 即可。SDK 仅提供编译期的类型与常量。
 
 ### 3. 配置并构建
 
@@ -169,7 +178,7 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 ## 已知限制
 
 - **仅在 Windows 上构建与验证过。** 代码保留了跨平台结构（如 `core::Secret` 对非 Windows 平台有 `#else` 分支），但 macOS / Linux 构建尚未打通，也没有 CI 验证。非 Windows 分支下密码仅做 base64 编码，**不构成保护**，接入系统钥匙串前不要在这些平台存放真实凭据。
-- **Oracle SDK 头文件目前是硬性构建依赖**，即使不用 Oracle 也必须准备（见上）。应改为可选的 CMake 开关。
+- **Oracle 原生 OCI 驱动需自备 Instant Client SDK 头文件**才会编入（见上）。未提供时该驱动自动排除，不影响其余引擎构建。
 - **源码尚未逐文件添加 Apache 许可证头。** 许可证以仓库根目录的 [LICENSE](LICENSE) 为准。
 - 源码注释中残留部分指向 `docs/` 的引用，该目录未随本仓库发布。
 - 尚无 CI、CONTRIBUTING 与 issue 模板。
