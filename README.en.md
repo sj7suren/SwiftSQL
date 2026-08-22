@@ -221,14 +221,14 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 The full text is in [LICENSE](LICENSE), and every source file carries an `SPDX-License-Identifier: GPL-3.0-or-later` header.
 
-**Use and resale:**
+**Use and licensing:**
 
 - **Free of charge for individuals and companies using it themselves** — production use and modification included, with no fee and no additional licence required.
-- **To resell this project to other individuals or organisations**, please obtain the author's **written permission** in advance, or contact the author to purchase an **enterprise licence**: 📧 **sj7suren@hotmail.com**
-- If you distribute this software or a modified version, the GPLv3 applies: include a copy of the licence and supply the recipient with the complete corresponding source.
+- If you **distribute** this software or a modified version, the GPLv3 applies: include a copy of the licence and supply the recipient with the complete corresponding source.
+- **Would rather not take on those obligations?** For example, shipping this project inside a **closed-source product**, or offering commercial distribution and services around it — an **enterprise licence** releases you from every GPLv3 obligation: 📧 **sj7suren@hotmail.com**
 - The software is provided "as is", without warranty of any kind, express or implied.
 
-> See [TRADEMARK.md](TRADEMARK.md) for where resale, branding and trademarks stand exactly, and [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below for commercial terms.
+> See [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below for commercial terms.
 
 ### Third-party components
 
