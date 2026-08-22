@@ -1,0 +1,106 @@
+# swiftsql_ui — the wxWidgets presentation layer. Depends on core + db.
+#   IconFactory / EditorPage / MainFrame / ConnectionDialog / views
+add_library(swiftsql_ui STATIC
+    IconFactory.cpp
+    SplashScreen.cpp
+    CrashDialog.cpp
+    AboutDialog.cpp
+    EditorPage.cpp
+    EditorPageObject.cpp
+    EditorPageFind.cpp
+    EditorSqlFormat.cpp
+    EditorCompletion.cpp
+    ObjectTemplates.cpp
+    RoutineExecDialog.cpp
+    SqlErrorDialog.cpp
+    ResultGridPanel.cpp
+    ResultGridPanelOps.cpp
+    ResultGridPanelChrome.cpp
+    ResultGridSql.cpp
+    ResultGridModel.cpp
+    QuerySource.cpp
+    TableInfoPanel.cpp
+    TableDataPage.cpp
+    ConnectionTree.cpp
+    ConnectionTree_Events.cpp
+    ConnectionTree_Conn.cpp
+    ConnectionTree_DbOps.cpp
+    ConnectionTree_TableOps.cpp
+    ConnectionTree_Groups.cpp
+    GhostSuggest.cpp
+    GhostTextOverlay.cpp
+    MainFrame.cpp
+    MainFrame_Chrome.cpp
+    EditorTabArt.cpp
+    MainFrame_Overview.cpp
+    MainFrame_Query.cpp
+    MainFrame_Tabs.cpp
+    MainFrame_Events.cpp
+    MainFrame_Scripts.cpp
+    MainFrame_Automation.cpp
+    AutomationJobDialog.cpp
+    AutomationScheduleDialog.cpp
+    ScriptLibraryPanel.cpp
+    ObjectListPanel.cpp
+    UserEditDialog.cpp
+    ConnectionDialog.cpp
+    NewDatabaseDialog.cpp
+    RunScriptDialog.cpp
+    DumpScriptDialog.cpp
+    SyncWizardDialog.cpp
+    SyncWizardHook.cpp
+    SyncCrossEngineGate.cpp
+    SyncDiffModel.cpp
+    SyncSelection.cpp
+    SyncCompareGrid.cpp
+    SyncCompareDetail.cpp
+    SyncRoutineCells.cpp
+    SyncSqlPreviewPane.cpp
+    SyncCompareSession.cpp
+    SyncSpecScript.cpp
+    SyncComparePage.cpp
+    SyncRunnerDialog.cpp
+    CellViewerPanel.cpp
+    FilterPanel.cpp
+    SortPanel.cpp
+    ColumnPicker.cpp
+    ExportDialog.cpp
+    ImportDialog.cpp
+    TableDesignView.cpp
+    TableDesignView_Index.cpp
+    TableDesignView_Fk.cpp
+    TableDesignView_Trigger.cpp
+    TableDesignView_Options.cpp
+    TableDesignView_Tabs.cpp
+    NewTableView.cpp
+    ErDiagramView.cpp
+    MermaidDiagram.cpp
+    MermaidRender.cpp
+    MermaidChat.cpp
+    QueryBuilderModel.cpp
+    QueryBuilderPanel.cpp
+    PreferencesDialog.cpp
+    ServerMonitorDialog.cpp
+    AiSqlCompleter.cpp
+    AiContextBuilder.cpp
+    ChatTranscript.cpp
+    AiChatPanel.cpp
+    AiChatPanel_Turn.cpp
+    AiChatPanel_Kb.cpp
+    AiChatPanel_Conversations.cpp
+    ConversationStore.cpp
+    ConversationDrawer.cpp
+    AiKnowledgeBase.cpp
+    AiKnowledgeStore.cpp
+)
+add_library(swiftsql::ui ALIAS swiftsql_ui)
+
+target_include_directories(swiftsql_ui PUBLIC ${CMAKE_SOURCE_DIR}/src)
+
+target_link_libraries(swiftsql_ui PUBLIC
+    swiftsql::core
+    swiftsql::db
+    swiftsql::net
+    swiftsql::ai
+    wx::core wx::base wx::stc wx::aui
+)

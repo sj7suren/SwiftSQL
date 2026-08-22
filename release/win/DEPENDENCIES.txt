@@ -1,0 +1,62 @@
+﻿SwiftSQL Windows x64 Release — Dependency Audit
+================================================
+
+Build:     Release x64 (MSVC, vcpkg x64-windows-static, static CRT /MT)
+Version:   1.1.20
+Licence:   Apache License 2.0 (see LICENSE at the repository root)
+Copyright: Copyright (c) 2026 SwiftSQL Contributors
+
+--------------------------------------------------------------------------
+SwiftSQL.exe — self-contained, no C++ runtime required
+--------------------------------------------------------------------------
+Built with the STATIC MSVC runtime (/MT) and static vcpkg libraries, so it
+needs NO Visual C++ Redistributable — vcruntime140/msvcp140 are baked in.
+`dumpbin /dependents SwiftSQL.exe` lists only Windows system DLLs:
+
+  dbghelp, bcrypt, Secur32, CRYPT32, ODBC32, IMM32, KERNEL32, USER32, GDI32,
+  COMDLG32, WINSPOOL.DRV, SHELL32, SHLWAPI, COMCTL32, ole32, RPCRT4, ADVAPI32,
+  WS2_32, OLEACC, UxTheme, dwmapi, MSIMG32
+
+All database drivers except Oracle are statically linked into the exe
+(MySQL/MariaDB, PostgreSQL libpq, SQLite, SSH tunnel libssh2, OpenSSL) — no
+app-local DLLs required for them.
+
+SQL Server uses the Windows ODBC subsystem (ODBC32.dll, system-provided). The
+"ODBC Driver 17 for SQL Server" must be installed separately by the user if
+they connect to SQL Server; it is not bundled here.
+
+--------------------------------------------------------------------------
+Oracle — NOT bundled
+--------------------------------------------------------------------------
+The Oracle Instant Client is intentionally NOT shipped in this installer (it is
+large and would drag in a Visual C++ 2005 runtime dependency via MSVCR80.dll).
+The app still supports Oracle / 达梦: a user who needs it drops a 64-bit oci.dll
+next to SwiftSQL.exe, or points the in-app OCI path at their Oracle client.
+
+--------------------------------------------------------------------------
+Visual C++ runtime — bundled defensively (not strictly required)
+--------------------------------------------------------------------------
+Nothing in this build actually needs a VC++ Redistributable: SwiftSQL.exe is
+static /MT and Oracle is not bundled. As a safeguard, the installer still ships
+the Microsoft Visual C++ 2015-2022 x64 runtime (redist\VC_redist.x64.exe) and
+installs it silently ONLY when it is missing:
+
+  Check:  registry HKLM\SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64
+          \Installed == 1, else probe {sys}\vcruntime140.dll
+  Install: VC_redist.x64.exe /install /quiet /norestart   (skipped if present)
+
+Most modern Windows already has it, so this step usually does not run. Remove
+redist\VC_redist.x64.exe and the [Run] vcredist line to drop the safeguard.
+
+--------------------------------------------------------------------------
+User-data footprint (for reference / uninstall)
+--------------------------------------------------------------------------
+All per-user data lives in a single directory:  %APPDATA%\SwiftSQL\
+  settings.ini            UI settings + language preference
+  connections (+ secrets) saved connections and encrypted passwords
+  scripts_index.ini, *.sql saved SQL scripts
+  favorites, automation jobs
+  crash.log
+
+The uninstaller removes program files automatically and offers (default: No) to
+also delete this data directory.

@@ -1,0 +1,10 @@
+# Windows batch/command scripts must use CRLF, or cmd.exe mis-parses them
+# (a .bat with LF endings runs its REM/comment lines as commands and fails).
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Assertion-census baselines are written LF by assertion_census.py --update.
+# Pinning eol=lf keeps a regenerated manifest byte-identical to the checked-in
+# one, so `--update` on a clean tree produces no diff and a real census drift is
+# the only thing that ever shows up in `git status`.
+tests/lint/census/*.txt text eol=lf

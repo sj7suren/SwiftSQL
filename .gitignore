@@ -1,0 +1,61 @@
+# ---- Build output ----
+build/
+build-ent/
+out/
+cmake-build-*/
+bin/
+lib/
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+_deps/
+*.cmake.stamp
+
+# ---- Compiled objects / binaries ----
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# ---- IDE / editor ----
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+compile_commands.json
+
+# ---- macOS ----
+.DS_Store
+
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
+
+# ---- Packaging artifacts ----
+*.AppImage
+*.dmg
+*.zip
+packaging/**/staging/
+third_party/
+
+# ---- Not part of the open-source distribution ----
+# The marketing site lives in its own private repository. It was purged from
+# this repo's history on 2026-08-21; keep the path ignored so a stray local copy
+# can never be committed back in by accident.
+website/
+
+# ---- Stray local artifacts (never part of the source distribution) ----
+err/
+release/win/Output/
