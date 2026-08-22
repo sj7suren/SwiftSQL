@@ -189,9 +189,11 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 
 SwiftSQL 完全免费，没有付费版本、功能阉割或使用期限——所有能力对所有人开放。
 
-如果它为你省下了时间，欢迎请作者喝杯咖啡：
+如果它为你省下了时间，欢迎请作者喝杯咖啡 —— 请打开**支付宝**，用「扫一扫」扫描下方二维码：
 
-<img src="src/win/assets/alipay_qr.png" width="200" alt="支付宝收款码">
+<img src="src/win/assets/alipay_qr.png" width="200" alt="支付宝收款码 — 请使用支付宝扫一扫">
+
+<sub>支付宝收款码（微信扫码无法识别）</sub>
 
 应用内「关于 → ☕ 捐赠支持」可以扫到同一个码。
 
