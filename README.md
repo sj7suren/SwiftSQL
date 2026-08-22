@@ -262,6 +262,24 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 完整依赖审计见 [release/win/DEPENDENCIES.txt](release/win/DEPENDENCIES.txt)。
 
+### 商标与转售
+
+GPL 只处理**版权**，不授予**商标**权利。「SwiftSQL」名称与应用图标的权利由作者保留，不随代码许可一并授予。
+
+| 行为 | 是否需要许可 |
+|---|---|
+| 使用、修改、分发源代码 | 否 |
+| 收费销售副本 | 否（GPLv3 明确允许，但须同时提供完整源码） |
+| 以「SwiftSQL」名义销售或提供付费服务 | **是，需事先书面许可** |
+| 在你的产品名 / 公司名 / 域名中使用「SwiftSQL」 | **是，需事先书面许可** |
+| 用 SwiftSQL 图标标识你的分发版 | **是，需事先书面许可** |
+
+分发修改版时，请改用你自己的名称与图标。
+
+> 如你计划商业转售或大规模分发，**无论是否使用本项目名称，都希望你先与作者联系** —— 就代码本身而言这是请求而非义务；涉及名称或图标时则是必须的。
+
+完整政策见 [TRADEMARK.md](TRADEMARK.md)。
+
 ---
 
 ## 企业版与商业授权
