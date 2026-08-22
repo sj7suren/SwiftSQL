@@ -221,26 +221,14 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 The full text is in [LICENSE](LICENSE), and every source file carries an `SPDX-License-Identifier: GPL-3.0-or-later` header.
 
-**What this means for you:**
+**Use and resale:**
 
-The point most often confused: **the GPLv3 governs whether you ship source when you distribute, not whether you may make money.** Commercial use — including profiting from it — is entirely free.
-
-| Your situation | Must you publish your source? | Do you need a commercial licence? |
-|---|---|---|
-| Your company uses it to manage its production databases | No | No |
-| You modify it for internal use only, never distributing it | No | No |
-| You pass the installer on unchanged to clients or colleagues | Just include the GPLv3 and a way to get the source | No |
-| You distribute a modified version, or ship this code inside your own product | **Yes**, the complete source under the GPLv3 | No, if you are willing to open it |
-| Same, but your product must stay **closed-source** | — | **Yes** |
-
-In detail:
-
-- You are free to run, study, modify and distribute this software, commercial settings included, **at no cost**.
-- But whenever you **distribute** it — a modified version, or any derivative work containing this code — you must release the corresponding complete source under the same GPLv3 terms, and keep the copyright and licence notices intact.
-- **Internal use is exempt**: using and modifying it yourself or inside your company, without distributing it, creates no obligation to publish anything.
+- **Free of charge for individuals and companies using it themselves** — production use and modification included, with no fee and no additional licence required.
+- **To resell this project to other individuals or organisations**, please obtain the author's **written permission** in advance, or contact the author to purchase an **enterprise licence**: 📧 **sj7suren@hotmail.com**
+- If you distribute this software or a modified version, the GPLv3 applies: include a copy of the licence and supply the recipient with the complete corresponding source.
 - The software is provided "as is", without warranty of any kind, express or implied.
 
-> The GPLv3 only gets in your way when you need to ship this code inside a **closed-source product**. A separate commercial licence covers that case — see [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below.
+> See [TRADEMARK.md](TRADEMARK.md) for where resale, branding and trademarks stand exactly, and [Enterprise and commercial licensing](#enterprise-and-commercial-licensing) below for commercial terms.
 
 ### Third-party components
 
