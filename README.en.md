@@ -250,24 +250,6 @@ Each dependency keeps its own licence; all are GPLv3-compatible:
 
 The full dependency audit is in [release/win/DEPENDENCIES.txt](release/win/DEPENDENCIES.txt).
 
-### Trademarks and resale
-
-The GPL grants **copyright** permissions only — it grants no **trademark** rights. The name "SwiftSQL" and the application icon are reserved by the author and are not conveyed with the code licence.
-
-| Activity | Permission needed? |
-|---|---|
-| Use, modify and distribute the source | No |
-| Sell copies for a fee | No — the GPLv3 allows it, provided you also supply the complete source |
-| Sell or offer paid services under the SwiftSQL name | **Yes, prior written permission** |
-| Use "SwiftSQL" in your product, company or domain name | **Yes, prior written permission** |
-| Brand your distribution with the SwiftSQL icon | **Yes, prior written permission** |
-
-When distributing a modified version, please use your own name and icon.
-
-> If you plan to resell commercially or distribute at scale, **we would like you to get in touch first, whether or not you use the project's name** — for the code itself that is a request rather than an obligation; where the name or icon is involved it is required.
-
-The full policy is in [TRADEMARK.md](TRADEMARK.md).
-
 ---
 
 ## Enterprise and commercial licensing
