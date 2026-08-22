@@ -4,7 +4,7 @@ REM  Build the SwiftSQL Windows installer with Inno Setup 6.
 REM  Prerequisites:
 REM    * Inno Setup 6 installed (provides ISCC.exe).
 REM    * ChineseSimplified.isl present in Inno's Languages folder
-REM      (for the ???????installer language).
+REM      (for the Simplified Chinese installer language).
 REM    * release\win\dist\SwiftSQL.exe staged (a fresh release build of the exe).
 REM  Output: release\win\Output\SwiftSQL-Setup-1.1.20.exe
 REM ==========================================================================
