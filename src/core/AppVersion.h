@@ -29,5 +29,11 @@ inline constexpr const wchar_t* kAppVersionText = L"v" SW_WSTR(SWIFTSQL_VER_STR)
 inline constexpr const wchar_t* kCopyrightText =
     L"Copyright (C) 2026 SwiftSQL Contributors";
 inline constexpr const wchar_t* kLicenseText = L"GNU GPL v3.0 or later";
+// Where this binary's corresponding source lives. Under the GPL a distributed
+// binary must be accompanied by its source or by an offer for it (GPLv3 s.6);
+// surfacing the URL in the About dialog is how that offer reaches the person
+// actually holding the program, rather than only the person who downloaded the
+// installer and read its licence page.
+inline constexpr const wchar_t* kSourceUrl = L"https://github.com/sj7suren/SwiftSQL";
 
 } // namespace core
