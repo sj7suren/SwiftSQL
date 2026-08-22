@@ -1,6 +1,7 @@
 ﻿; ============================================================================
 ;  SwiftSQL — Inno Setup script (Windows x64 installer)
-;  Copyright (c) 2026 SwiftSQL Contributors · Apache License 2.0
+;  Copyright (C) 2026 SwiftSQL Contributors · GNU GPL v3.0 or later
+;  SPDX-License-Identifier: GPL-3.0-or-later
 ;
 ;  Build with Inno Setup 6:  ISCC.exe SwiftSQL.iss   (or run build_installer.bat)
 ;
@@ -72,8 +73,8 @@ ShowLanguageDialog=yes
 LanguageDetectionMethod=none
 
 [Languages]
-; The English licence page shows the authoritative Apache-2.0 text straight from
-; the repo root — one source of truth, no copy to drift. Inno resolves relative
+; The English licence page shows the authoritative GPLv3 text straight from the
+; repo root — one source of truth, no copy to drift. Inno resolves relative
 ; paths against this .iss file's directory, not the ISCC working directory.
 Name: "en"; MessagesFile: "compiler:Default.isl";                     LicenseFile: "..\..\LICENSE"
 ; NOTE: ChineseSimplified.isl must exist in Inno's Languages folder. It ships
@@ -93,9 +94,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "dist\SwiftSQL.exe"; DestDir: "{app}"; Flags: ignoreversion
-; Apache-2.0 section 4(a) requires every recipient of the Work to be GIVEN a copy
-; of the licence. The wizard's licence page only DISPLAYS it, so install the file
-; next to the exe as well.
+; GPLv3 section 4 requires every recipient to receive a copy of the licence along
+; with the program. The wizard's licence page only DISPLAYS it during setup, so
+; install the file next to the exe as well, where it stays with the installation.
+; (The corresponding source is offered via the repository URL in eula_zh.txt and
+; DEPENDENCIES.txt, satisfying section 6.)
 Source: "..\..\LICENSE"; DestDir: "{app}"; Flags: ignoreversion
 ; App logo — installed as a standalone .ico so the shortcuts and the Control Panel
 ; uninstall entry can point at a fixed path. (The exe embeds the same icon via
