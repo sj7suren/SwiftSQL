@@ -152,6 +152,7 @@ extern const wchar_t* const kLangPackEn2[] = {
     L"感谢每一位支持者 ❤️ —— ", L"Thank you to every supporter ❤️ — ",
     L"关闭", L"Close",
     L"QQ 交流群：", L"QQ Group: ",
+    L"源代码：", L"Source code: ",
 
     // ---- AI knowledge base ----
     L"无法为知识库建立连接：", L"Cannot open a connection for the knowledge base: ",
