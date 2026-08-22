@@ -1,5 +1,7 @@
 # SwiftSQL
 
+**简体中文** · [English](README.en.md)
+
 [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2B%20x64-lightgrey.svg)](#构建)
 [![C++](https://img.shields.io/badge/C%2B%2B-17-brightgreen.svg)](CMakeLists.txt)
@@ -128,7 +130,7 @@ cmake --build build -j
 ctest --test-dir build --output-on-failure
 ```
 
-共 54 个测试套件，覆盖 SQL 语句切分、方言 profile、schema 差异、跨引擎同步比对、AI provider 选择、连接克隆等纯逻辑路径。涉及真实数据库的用例通过 `SWIFTSQL_MYTEST_*` / `SWIFTSQL_PGTEST_*` 环境变量提供连接信息，未设置时自动跳过。
+共 55 个测试套件，覆盖 SQL 语句切分、方言 profile、schema 差异、跨引擎同步比对、AI provider 选择、连接克隆等纯逻辑路径。涉及真实数据库的用例通过 `SWIFTSQL_MYTEST_*` / `SWIFTSQL_PGTEST_*` 环境变量提供连接信息，未设置时自动跳过。
 
 ---
 
@@ -179,7 +181,6 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 
 - **仅在 Windows 上构建与验证过。** 代码保留了跨平台结构（如 `core::Secret` 对非 Windows 平台有 `#else` 分支），但 macOS / Linux 构建尚未打通，也没有 CI 验证。非 Windows 分支下密码仅做 base64 编码，**不构成保护**，接入系统钥匙串前不要在这些平台存放真实凭据。
 - **Oracle 原生 OCI 驱动需自备 Instant Client SDK 头文件**才会编入（见上）。未提供时该驱动自动排除，不影响其余引擎构建。
-- **源码尚未逐文件添加 Apache 许可证头。** 许可证以仓库根目录的 [LICENSE](LICENSE) 为准。
 - 源码注释中残留部分指向 `docs/` 的引用，该目录未随本仓库发布。
 - 尚无 CI、CONTRIBUTING 与 issue 模板。
 
@@ -187,7 +188,7 @@ SWIFTSQL_AUTORUN="SELECT * FROM users LIMIT 100;"
 
 ## 支持项目 ☕
 
-SwiftSQL 完全免费，没有付费版本、功能阉割或使用期限——所有能力对所有人开放。
+SwiftSQL 开源版完全免费，没有功能阉割、使用期限或数量限制——所有能力对所有人开放。（商业授权买的是**许可条款**，不是额外功能；两者功能完全一致。）
 
 如果它为你省下了时间，欢迎请作者喝杯咖啡 —— 请打开**支付宝**，用「扫一扫」扫描下方二维码：
 
@@ -227,7 +228,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 - 这一要求对**内部自用**不适用——你自己或公司内部使用、修改而不对外分发，无需开源。
 - 本软件按"原样"提供，不附带任何明示或暗示的担保。
 
-> 若你需要在专有软件中集成本项目而不受 GPL 传染性约束，当前**没有**可用的商业授权选项。
+> 若你需要在专有软件中集成本项目、而不希望受 GPL 的开源传染性约束，可另行获取商业授权 —— 见下方[企业版与商业授权](#企业版与商业授权)。
 
 ### 第三方组件
 
@@ -248,3 +249,34 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 > Oracle Instant Client SDK 为专有组件，不随本仓库或安装包分发，仅在用户自备时于本地编译期使用。
 
 完整依赖审计见 [release/win/DEPENDENCIES.txt](release/win/DEPENDENCIES.txt)。
+
+---
+
+## 企业版与商业授权
+
+开源版本（GPLv3）功能完整、无任何阉割，绝大多数使用场景直接用它即可。
+
+但 GPLv3 的开源传染性对部分企业不适用 —— 典型情形是：
+
+- 需要把 SwiftSQL 集成进**闭源**的商业产品并对外分发
+- 内部合规政策不接受 copyleft 许可证
+- 需要定制开发、私有部署适配或国产数据库深度支持
+- 需要技术支持、SLA 或问题优先响应
+
+以上情形可**单独获取商业授权**，不受 GPLv3 条款约束。
+
+### 联系方式
+
+📧 **sj7suren@hotmail.com**
+
+商业授权咨询、定制开发、技术支持，请发送邮件说明你的使用场景与规模。
+
+### 建议与反馈
+
+同一邮箱也欢迎：
+
+- 功能建议与需求反馈
+- 使用中遇到的问题（附复现步骤更佳）
+- 对某个数据库引擎的适配诉求
+
+> 一般性 bug 与功能请求也可以直接提 [GitHub Issue](https://github.com/sj7suren/SwiftSQL/issues)，公开讨论便于其他用户搜索到相同问题。涉及商业合作、私有信息或不便公开的内容再走邮件。
