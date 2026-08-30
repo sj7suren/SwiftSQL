@@ -127,12 +127,14 @@ TableDesignView::FkRow* TableDesignView::AddFkRowControls()
     auto* refCols = new MultiPickCell(host, [] {});
     refCols->SetCandidateProvider([this, p]() -> wxArrayString {
         wxArrayString out;
-        if (!conn_ || !p->refTable) return out;
+        // Runs on popup, long after Load — the connection may be gone by now.
+        const auto c = Conn();
+        if (!c || !p->refTable) return out;
         wxString rt = p->refTable->GetValue(); rt.Trim(true).Trim(false);
         if (rt.IsEmpty()) return out;
         wxString rdb = p->refDb ? p->refDb->GetValue() : wxString(); rdb.Trim(true).Trim(false);
         std::vector<db::ColumnInfo> cs; wxString e;
-        if (conn_->GetColumns(rdb.IsEmpty() ? db_ : rdb, rt, cs, e))
+        if (c->GetColumns(rdb.IsEmpty() ? db_ : rdb, rt, cs, e))
             for (const auto& c : cs) out.Add(c.name);
         return out;
     });
@@ -240,7 +242,7 @@ bool TableDesignView::BuildFkEdits(db::TableEdit& edit, wxString& err) const
 
 void TableDesignView::SaveFkChanges()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     wxString err;
     db::TableEdit edit;
     if (!BuildFkEdits(edit, err)) {
