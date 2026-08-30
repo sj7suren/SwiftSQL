@@ -271,7 +271,7 @@ bool TableDesignView::BuildIndexEdits(db::TableEdit& edit, wxString& err) const
 
 void TableDesignView::SaveIndexChanges()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     wxString err;
     db::TableEdit edit;
     if (!BuildIndexEdits(edit, err)) {
