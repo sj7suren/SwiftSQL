@@ -1,5 +1,5 @@
 ﻿SwiftSQL — 开源许可说明
-版本 1.1.20
+版本 1.1.21
 
 SwiftSQL 是自由软件，依据 GNU 通用公共许可证第 3 版或更新版本
 （GNU General Public License v3.0 or later）授权发布。
