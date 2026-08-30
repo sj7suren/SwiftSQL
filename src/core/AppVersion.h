@@ -12,7 +12,7 @@
 
 namespace core {
 
-// Widen the single-source dotted version to L"vMAJOR.MINOR.PATCH" (e.g. L"v1.1.20").
+// Widen the single-source dotted version to L"vMAJOR.MINOR.PATCH" (e.g. L"v1.1.21").
 // SWIFTSQL_VER_STR is a single string literal, so the L## paste + adjacent-literal
 // concatenation below is well-formed.
 #define SW_WSTR2(x) L##x
