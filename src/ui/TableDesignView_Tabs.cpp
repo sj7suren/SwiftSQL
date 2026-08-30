@@ -719,7 +719,7 @@ db::ColumnModel TableDesignView::RowToModel(int r) const
 // the loaded snapshot. Returns false + err when nothing changed or a row is invalid.
 bool TableDesignView::BuildTableEdit(db::TableEdit& edit, wxString& err) const
 {
-    if (!conn_ || !profile_) { err = tr(L"未连接"); return false; }
+    if (!Conn() || !profile_) { err = tr(L"未连接"); return false; }
     edit.db = db_;
     edit.table = table_;
     edit.columns.clear();
@@ -777,7 +777,8 @@ wxString TableDesignView::ScriptedAddColumn(const wxString& name,
                                             const wxString& type,
                                             const wxString& length)
 {
-    if (!conn_ || !conn_->IsConnected() || table_.IsEmpty() || !profile_)
+    const auto c = Conn();
+    if (!c || !c->IsConnected() || table_.IsEmpty() || !profile_)
         return tr(L"ERR: 未连接或未选表");
 
     formScroll_->Freeze();
@@ -802,12 +803,12 @@ wxString TableDesignView::ScriptedAddColumn(const wxString& name,
     wxString joined;
     for (const wxString& s : stmts) {
         db::QueryResult res;
-        if (!conn_->Execute(s, res, err))
+        if (!c->Execute(s, res, err))
             return L"ERR: " + err + L"\n-- DDL:\n" + s;
         joined += s + L";\n";
     }
 
-    Load(conn_, db_, table_, dbType_);   // reload from server
+    Load(c, db_, table_, dbType_);   // reload from server
     return joined;
 }
 
@@ -834,7 +835,7 @@ bool TableDesignView::SaveChanges()
 // mandatory. Returns true only when fully applied.
 bool TableDesignView::ExecuteEdit(db::TableEdit& edit)
 {
-    if (!conn_ || !profile_) return false;
+    if (!Conn() || !profile_) return false;
 
     wxString err;
     std::vector<wxString> stmts;
@@ -850,17 +851,24 @@ bool TableDesignView::ExecuteEdit(db::TableEdit& edit)
                      wxYES_NO | wxICON_WARNING, this) != wxYES)
         return false;
 
+    // Re-acquire AFTER the confirm box: it runs a nested message loop, so the
+    // connection can be disconnected between the guard above and the DDL below.
+    const auto c = Conn();
+    if (!c || !c->IsConnected()) {
+        wxMessageBox(tr(L"连接已断开，结构未变更。"), tr(L"结构变更"), wxOK | wxICON_ERROR, this);
+        return false;
+    }
     for (const wxString& s : stmts) {
         db::QueryResult res;
-        if (!conn_->Execute(s, res, err)) {
+        if (!c->Execute(s, res, err)) {
             wxMessageBox(tr(L"执行失败:\n\n") + err + tr(L"\n\n-- 语句:\n") + s,
                          tr(L"结构变更"), wxOK | wxICON_ERROR, this);
-            Load(conn_, db_, table_, dbType_);   // resync to whatever committed
+            Load(c, db_, table_, dbType_);   // resync to whatever committed
             return false;
         }
     }
     wxMessageBox(tr(L"✓ 结构已更新"), tr(L"结构变更"), wxOK | wxICON_INFORMATION, this);
-    Load(conn_, db_, table_, dbType_);   // reload from server to reflect the new truth
+    Load(c, db_, table_, dbType_);   // reload from server to reflect the new truth
     return true;
 }
 
@@ -868,7 +876,7 @@ bool TableDesignView::ExecuteEdit(db::TableEdit& edit)
 // SQLite/SQL Server render nothing (RenderAlter no-op) → honest "无可执行语句".
 void TableDesignView::SaveComment()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     db::TableEdit edit;
     edit.db = db_;
     edit.table = table_;
@@ -914,7 +922,7 @@ void TableDesignView::BuildTableModel(db::TableModel& model) const
 // full CREATE (RenderCreate over the whole current structure). Called on tab switch.
 void TableDesignView::RefreshGeneratedTabs()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     const_cast<TableDesignView*>(this)->FlushAttrPanel();
 
     if (sqlPreview_) {
