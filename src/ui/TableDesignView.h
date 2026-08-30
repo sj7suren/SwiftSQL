@@ -51,7 +51,7 @@ public:
 
     // `type` (from ConnectionProfile.type) selects the DialectProfile that drives
     // the type dropdown, attribute panel and DDL rendering (ADR-014).
-    void Load(db::IConnection* conn, const wxString& database,
+    void Load(std::shared_ptr<db::IConnection> conn, const wxString& database,
               const wxString& table, db::DbType type);
 
     // Scripted verification hook: append a column with the given definition,
@@ -103,15 +103,20 @@ protected:   // protected (not private) so NewTableView can reuse the machinery
     void ShowEmpty(const wxString& msg);
     void PopulateFields();
     void UpdateEditability();
+    // The ONLY way to reach the borrowed connection. Null once the owning ConnEntry
+    // has released it, so every caller degrades to "not editable" / "no data" instead
+    // of calling through a freed driver. Callers must hold the returned shared_ptr for
+    // as long as they use it — never cache the raw pointer across an event.
+    std::shared_ptr<db::IConnection> Conn() const { return conn_.lock(); }
     // Whether the design is editable (drives toolbar buttons + the attribute panel).
     // The edit flow needs a loaded table; NewTableView overrides to drop the table_
     // requirement (a new table has no name yet, so everything would wrongly disable).
     virtual bool IsEditable() const
-    { return conn_ && conn_->IsConnected() && !table_.IsEmpty(); }
+    { const auto c = Conn(); return c && c->IsConnected() && !table_.IsEmpty(); }
     // Ctrl+S handler. Base = the original design-table behaviour (save field changes),
     // so the edit flow is byte-for-byte unchanged; NewTableView overrides to CREATE.
     virtual void SaveViaShortcut()
-    { if (conn_ && conn_->IsConnected() && !table_.IsEmpty()) SaveChanges(); }
+    { if (IsEditable()) SaveChanges(); }
 
     // ---- field form ----
     void BuildHeaderRow();
@@ -289,7 +294,11 @@ protected:   // protected (not private) so NewTableView can reuse the machinery
     void RefillCollationCombo(const wxString& charset);
 
     // ---- state ----
-    db::IConnection*             conn_ = nullptr;
+    // Borrowed, never owned: the driver belongs to the ConnEntry in ConnectionTree.
+    // weak_ptr rather than a raw pointer because this tab outlives any single event —
+    // it stays open across a disconnect, a dropped socket and a reconnect, each of
+    // which frees the driver. Reach it only through Conn(), which fails closed.
+    std::weak_ptr<db::IConnection> conn_;
     db::DbType                   dbType_ = db::DbType::MySQL;
     const db::DialectProfile*    profile_ = nullptr;
     wxString                     db_;
