@@ -16,7 +16,8 @@ namespace ui {
 
 // Start an empty CREATE-TABLE design: seed one blank field row, hide the ⑦TABLE DDL
 // tab (⑥DDL 预览 is the CREATE preview here), and reset every other tab to empty.
-void NewTableView::BeginNew(db::IConnection* conn, const wxString& database, db::DbType type)
+void NewTableView::BeginNew(std::shared_ptr<db::IConnection> conn, const wxString& database,
+                            db::DbType type)
 {
     conn_ = conn; db_ = database; table_ = wxString(); dbType_ = type;
     profile_ = &db::GetDialectProfile(type);
@@ -51,7 +52,7 @@ void NewTableView::BeginNew(db::IConnection* conn, const wxString& database, db:
 // user saves). No ALTER, and no ⑦TABLE DDL pane.
 void NewTableView::RefreshGeneratedTabs()
 {
-    if (!conn_ || !profile_ || !sqlPreview_) return;
+    if (!Conn() || !profile_ || !sqlPreview_) return;
     FlushAttrPanel();
 
     db::TableModel model;
@@ -68,7 +69,7 @@ void NewTableView::RefreshGeneratedTabs()
 // follow-on index/comment/trigger statements from RenderCreate).
 void NewTableView::OnSaveActiveTab()
 {
-    if (!conn_ || !profile_) return;
+    if (!Conn() || !profile_) return;
     FlushAttrPanel();
 
     db::TableModel model;
@@ -99,9 +100,16 @@ void NewTableView::OnSaveActiveTab()
                      wxYES_NO | wxICON_WARNING, this) != wxYES)
         return;
 
+    // Re-acquire AFTER the name prompt and the confirm box: both run nested message
+    // loops, during which the connection can be disconnected out from under us.
+    const auto c = Conn();
+    if (!c || !c->IsConnected()) {
+        wxMessageBox(tr(L"连接已断开，表未创建。"), tr(L"新建表"), wxOK | wxICON_ERROR, this);
+        return;
+    }
     for (const wxString& s : stmts) {
         db::QueryResult res;
-        if (!conn_->Execute(s, res, err)) {
+        if (!c->Execute(s, res, err)) {
             wxMessageBox(tr(L"创建失败：\n\n") + err + tr(L"\n\n-- 语句：\n") + s, tr(L"新建表"),
                          wxOK | wxICON_ERROR, this);
             return;
