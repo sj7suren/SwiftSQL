@@ -40,12 +40,24 @@ class NodeData;
 // kept alive for the duration of the connection.
 struct ConnEntry {
     core::ConnectionProfile          profile;
-    std::unique_ptr<db::IConnection> conn;
+    // shared_ptr, not unique_ptr: long-lived tab views (TableDesignView /
+    // NewTableView / QueryBuilderPanel) borrow this connection for as long as the
+    // tab is open, and they hold a weak_ptr to it. Every such borrow therefore
+    // fails closed once this entry drops the connection, instead of dereferencing
+    // a freed driver — the crash this replaced was exactly that: reconnecting a
+    // dropped connection freed the old IConnection while a 设计表 tab still held a
+    // raw pointer to it, and the next focus event called conn_->IsConnected() on
+    // it. Ownership is still exclusively this entry's; nobody else keeps a
+    // shared_ptr alive past the call it was borrowed for.
+    std::shared_ptr<db::IConnection> conn;
     std::unique_ptr<net::SshTunnel>  tunnel;
     wxTreeItemId                     node;
     wxString                         currentDb;
     ConnEntry();
     ~ConnEntry();
+    // NOTE: false for a dropped-but-not-yet-freed connection (object alive, socket
+    // dead). Callers that release `conn` must not gate that release on this — see
+    // ConnectionTree::ReleaseConnection.
     bool IsConnected() const { return conn && conn->IsConnected(); }
 };
 
@@ -239,6 +251,13 @@ private:
     void LoadCategoryMembers(const wxTreeItemId& catNode);   // async; reads NodeData::cat
     void JoinCatWorker();    // cancel + join the loader (before starting a new one)
     void AbortCatWorker();   // JoinCatWorker + bump generation (before deleting nodes)
+    // The ONE place a live-or-dead `e->conn` is released. Stops the catalogue loader,
+    // fires entryClosing so MainFrame joins every worker bound to this connection and
+    // closes the tabs that borrowed it, then drops the driver and its tunnel.
+    // DisconnectEntry, DeleteConnection and BOTH connect paths funnel through this —
+    // the connect paths used to assign straight over `e->conn`, whose unique_ptr
+    // destructor freed the old driver silently, with no notification to anyone.
+    void ReleaseConnection(ConnEntry* e);
     void SetConnIcon(ConnEntry* e);
 
     // ---- 分组 (ConnectionTree_Groups.cpp) ---------------------------------
