@@ -246,6 +246,12 @@ void ConnectionTree::ConnectEntry(ConnEntry* e)
         }
     }
 
+    // We only get here when the entry is NOT connected — but that includes the case
+    // where a driver object is still around with a dead socket (idle timeout, laptop
+    // sleep, server restart). Release it properly instead of letting the assignment
+    // below destroy it silently: the tabs and workers that borrowed it must be told.
+    ReleaseConnection(e);
+
     // Effective connect target — rewritten to the local end of an SSH tunnel
     // when the profile enables SSH.
     core::ConnectionProfile eff = e->profile;
@@ -355,6 +361,10 @@ ConnEntry* ConnectionTree::EnsureConnectedByName(const wxString& name, wxString&
         wxString oci;
         if (!db::OciAvailable(oci)) { err = tr(L"未配置 Oracle 客户端"); return nullptr; }
     }
+    // Same stale-driver release as ConnectEntry — an automation job that reconnects a
+    // dropped connection must not free it out from under the tabs still borrowing it.
+    ReleaseConnection(e);
+
     core::ConnectionProfile eff = e->profile;
     if (e->profile.sshEnabled) {
         e->tunnel = std::make_unique<net::SshTunnel>();
