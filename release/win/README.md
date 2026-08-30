@@ -15,7 +15,7 @@ release/win/
 │  ├─ SwiftSQL.exe       主程序（x64、静态 CRT、单文件）
 │  └─ lang/              可选的外置语言覆盖包目录
 ├─ redist/               VC_redist.x64.exe（VC++ 2015-2022，缺失时自动装）
-└─ Output/               ISCC 生成的 SwiftSQL-Setup-1.1.20.exe 落地于此
+└─ Output/               ISCC 生成的 SwiftSQL-Setup-1.1.21.exe 落地于此
 ```
 
 ## 前置条件
@@ -32,7 +32,7 @@ release/win/
 cd /d <repo-root>\release\win
 build_installer.bat
 ```
-产物：`Output\SwiftSQL-Setup-1.1.20.exe`。
+产物：`Output\SwiftSQL-Setup-1.1.21.exe`。
 
 ## 关键设计
 
