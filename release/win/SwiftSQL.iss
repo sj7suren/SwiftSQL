@@ -20,7 +20,7 @@
 ; ============================================================================
 
 #define AppName        "SwiftSQL"
-#define AppVersion     "1.1.20"
+#define AppVersion     "1.1.21"
 #define AppPublisher   "SwiftSQL Contributors"
 #define AppExe         "SwiftSQL.exe"
 #define AppUrl         "https://github.com/sj7suren/SwiftSQL"
@@ -33,7 +33,7 @@ AppVersion={#AppVersion}
 AppVerName={#AppName} {#AppVersion}
 AppPublisher={#AppPublisher}
 AppPublisherURL={#AppUrl}
-VersionInfoVersion=1.1.20.0
+VersionInfoVersion=1.1.21.0
 VersionInfoCompany={#AppPublisher}
 VersionInfoDescription={#AppName} Setup
 DefaultDirName={autopf}\{#AppName}
