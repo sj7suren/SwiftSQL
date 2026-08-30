@@ -410,7 +410,7 @@ TableDesignView* MainFrame::OpenDesignTab(ConnEntry* e, const wxString& db, cons
     }
 
     auto* page = new TableDesignView(editors_);
-    page->Load(e->conn.get(), db, table, e->profile.type);
+    page->Load(e->conn, db, table, e->profile.type);
     // 关闭 toolbar button → remove this tab. Programmatic DeletePage does not fire the
     // AUINOTEBOOK_PAGE_CLOSE veto, so the view's own confirm (already run) isn't asked
     // twice. Deferred so the button click finishes before the page is destroyed.
@@ -446,10 +446,11 @@ void MainFrame::OpenNewTableTab(ConnEntry* e, const wxString& db)
     e->currentDb = db;
 
     auto* page = new NewTableView(editors_);
-    page->BeginNew(e->conn.get(), db, e->profile.type);
+    page->BeginNew(e->conn, db, e->profile.type);
     page->SetOnRequestClose([this, page] {
         CallAfter([this, page] {
             tabColors_.erase(page);
+            designTabs_.erase(page);
             const int i = editors_->GetPageIndex(page);
             if (i != wxNOT_FOUND) editors_->DeletePage(i);
             UpdateQueryView();
@@ -465,6 +466,10 @@ void MainFrame::OpenNewTableTab(ConnEntry* e, const wxString& db)
     const int idx = editors_->GetPageIndex(page);
     if (idx != wxNOT_FOUND)
         editors_->SetPageToolTip(idx, e->profile.name + L" / " + db + L" / " + tr(L"新建表"));
+    // 归属连接 → 断连时随该连接一并关闭。表名留空:OpenDesignTab 的去重只查非空表名
+    // 的三元组,所以这条记录永远不会被误当成某张已有表的设计标签。这个登记以前缺失,
+    // 于是"新建表"标签在断开连接后仍活着,握着一个已释放的连接。
+    designTabs_[page] = { e, db, wxString() };
     UpdateQueryView();
     SwitchView(View::Query);
 }
@@ -623,7 +628,7 @@ void MainFrame::OpenQueryBuilder()
         if (EditorPage* p = ActivePage()) p->InsertQuery(sql);
         SwitchView(View::Query);
     });
-    page->Load(e->conn.get(), e->currentDb, e->conn->GetDialect());
+    page->Load(e->conn, e->currentDb, e->conn->GetDialect());
     editors_->AddPage(page, tr(L"构建查询: ") + e->currentDb, /*select*/ true,
                       icons::Stroke(icons::Glyph::ErDiagram, 14, theme::kAccent));
     const int idx = editors_->GetPageIndex(page);
