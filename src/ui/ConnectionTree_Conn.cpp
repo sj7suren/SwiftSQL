@@ -24,9 +24,13 @@
 namespace ui {
 
 // ---------------------------------------------------------------------------
-void ConnectionTree::DisconnectEntry(ConnEntry* e)
+// The single release path for a ConnEntry's driver. Gated on `e->conn` (the object
+// exists), NOT on IsConnected() (the socket is live) — those diverge the moment a
+// connection drops, and releasing a dropped-but-allocated driver is exactly the case
+// that used to slip through unannounced.
+void ConnectionTree::ReleaseConnection(ConnEntry* e)
 {
-    if (!e || !e->IsConnected()) return;
+    if (!e || !e->conn) return;
     AbortCatWorker();   // stop the loader before the connection it may be querying is freed
     // 无条件通知:表列表标签可能正显示这个 entry(即便它不是 active_),必须在
     // conn 释放前让 MainFrame 停掉相关 worker 并清引用,否则悬空/UAF。
@@ -35,6 +39,17 @@ void ConnectionTree::DisconnectEntry(ConnEntry* e)
     e->conn.reset();
     e->tunnel.reset();          // tear down the SSH tunnel after the DB socket
     e->currentDb.clear();
+}
+
+// ---------------------------------------------------------------------------
+void ConnectionTree::DisconnectEntry(ConnEntry* e)
+{
+    // Gated on the driver object, not on IsConnected(): "断开连接" on a connection
+    // whose socket had already dropped used to return here having done nothing,
+    // leaving the dead driver and its tabs in place until a later reconnect freed
+    // it silently.
+    if (!e || !e->conn) return;
+    ReleaseConnection(e);
     tree_->DeleteChildren(e->node);
     tree_->Collapse(e->node);
     tree_->SetItemHasChildren(e->node, true);   // keep the expand chevron (re-connect on expand)
