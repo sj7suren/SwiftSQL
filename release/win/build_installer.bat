@@ -6,7 +6,7 @@ REM    * Inno Setup 6 installed (provides ISCC.exe).
 REM    * ChineseSimplified.isl present in Inno's Languages folder
 REM      (for the Simplified Chinese installer language).
 REM    * release\win\dist\SwiftSQL.exe staged (a fresh release build of the exe).
-REM  Output: release\win\Output\SwiftSQL-Setup-1.1.20.exe
+REM  Output: release\win\Output\SwiftSQL-Setup-1.1.21.exe
 REM ==========================================================================
 setlocal
 set "ISCC=C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
