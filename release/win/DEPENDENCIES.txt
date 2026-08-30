@@ -2,7 +2,7 @@
 ================================================
 
 Build:     Release x64 (MSVC, vcpkg x64-windows-static, static CRT /MT)
-Version:   1.1.20
+Version:   1.1.21
 Licence:   GNU GPL v3.0 or later (see LICENSE at the repository root)
 Copyright: Copyright (C) 2026 SwiftSQL Contributors
 Source:    https://github.com/sj7suren/SwiftSQL
@@ -41,7 +41,7 @@ needs NO Visual C++ Redistributable — vcruntime140/msvcp140 are baked in.
   COMDLG32, WINSPOOL.DRV, SHELL32, SHLWAPI, COMCTL32, ole32, OLEAUT32, RPCRT4,
   ADVAPI32, WS2_32, OLEACC, UxTheme, dwmapi, MSIMG32
 
-(23 imports, all shipped with Windows. Verified against the 1.1.20 build.)
+(23 imports, all shipped with Windows. Verified against the 1.1.21 build.)
 
 All database drivers except Oracle are statically linked into the exe
 (MySQL/MariaDB, PostgreSQL libpq, SQLite, SSH tunnel libssh2, OpenSSL) — no
