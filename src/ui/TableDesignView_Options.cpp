@@ -55,7 +55,8 @@ void TableDesignView::BuildOptionsForm()
     // unavailable). Only engine/charset/collation are introspected.
     db::TableSchema ts;
     bool haveTs = false;
-    if (conn_ && !table_.IsEmpty()) { wxString e; haveTs = conn_->GetTableSchema(db_, table_, ts, e); }
+    const auto optConn = Conn();
+    if (optConn && !table_.IsEmpty()) { wxString e; haveTs = optConn->GetTableSchema(db_, table_, ts, e); }
     auto currentValue = [&](const wxString& id) -> wxString {
         if (!haveTs) return wxString();
         if (id == L"engine")    return ts.engine;
@@ -164,7 +165,7 @@ void AssignOpt(db::TableOptions& opts, const wxString& id, const wxString& v)
 
 void TableDesignView::SaveOptions()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     db::TableEdit edit;
     edit.db = db_; edit.table = table_;
     edit.hasOptions = true;
