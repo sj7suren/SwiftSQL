@@ -784,7 +784,7 @@ void TableDesignView::PopulateFields()
 }
 
 // ---------------------------------------------------------------------------
-void TableDesignView::Load(db::IConnection* conn, const wxString& database,
+void TableDesignView::Load(std::shared_ptr<db::IConnection> conn, const wxString& database,
                            const wxString& table, db::DbType type)
 {
     conn_ = conn; db_ = database; table_ = table; dbType_ = type;
