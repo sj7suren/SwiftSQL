@@ -520,7 +520,7 @@ QueryBuilderPanel::QueryBuilderPanel(wxWindow* parent)
     RegenSql();
 }
 
-void QueryBuilderPanel::Load(db::IConnection* conn, const wxString& database,
+void QueryBuilderPanel::Load(std::shared_ptr<db::IConnection> conn, const wxString& database,
                              db::Dialect dialect)
 {
     conn_ = conn;
@@ -533,12 +533,12 @@ void QueryBuilderPanel::Load(db::IConnection* conn, const wxString& database,
     model_.qualifyDb = (dialect == db::Dialect::MySQL);
 
     allTables_.clear();
-    if (!conn_ || !conn_->IsConnected()) {
+    if (!conn || !conn->IsConnected()) {
         hint_->SetLabel(tr(L"未连接"));
         return;
     }
     std::vector<db::TableInfo> tabs; wxString err;
-    if (!conn_->ListTables(database, tabs, err)) {
+    if (!conn->ListTables(database, tabs, err)) {
         hint_->SetLabel(tr(L"读取表失败"));
         wxMessageBox(tr(L"读取表列表失败:") + L"\n" + err, tr(L"构建查询"),
                      wxOK | wxICON_ERROR, this);
@@ -563,14 +563,15 @@ void QueryBuilderPanel::RefreshTableList(const wxString& filter)
 
 void QueryBuilderPanel::AddTableToCanvas(const wxString& table)
 {
-    if (!conn_ || !conn_->IsConnected()) {
+    const auto c = Conn();
+    if (!c || !c->IsConnected()) {
         wxMessageBox(tr(L"连接已断开。"), tr(L"构建查询"), wxOK | wxICON_WARNING, this);
         return;
     }
     std::vector<db::ColumnInfo> cols; wxString err;
     {
         wxBusyCursor busy;
-        if (!conn_->GetColumns(db_, table, cols, err)) {
+        if (!c->GetColumns(db_, table, cols, err)) {
             wxMessageBox(tr(L"读取列失败:") + L"\n" + err, tr(L"构建查询"),
                          wxOK | wxICON_ERROR, this);
             return;
