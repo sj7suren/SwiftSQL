@@ -206,7 +206,7 @@ bool TableDesignView::BuildTriggerEdits(db::TableEdit& edit, wxString& err) cons
 
 void TableDesignView::SaveTriggerChanges()
 {
-    if (!conn_ || !profile_ || table_.IsEmpty()) return;
+    if (!Conn() || !profile_ || table_.IsEmpty()) return;
     // Fold the editor's pending text into the current row before diffing.
     if (curTrigRow_ >= 0 && curTrigRow_ < static_cast<int>(triggerRows_.size()) && triggerBody_)
         triggerRows_[curTrigRow_]->body = triggerBody_->GetValue();
