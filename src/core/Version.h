@@ -17,11 +17,11 @@
 
 #define SWIFTSQL_VER_MAJOR 1
 #define SWIFTSQL_VER_MINOR 1
-#define SWIFTSQL_VER_PATCH 20
+#define SWIFTSQL_VER_PATCH 21
 #define SWIFTSQL_VER_BUILD 0
 
-// Dotted string form, e.g. "1.1.20". Kept alongside the numeric parts in this one
+// Dotted string form, e.g. "1.1.21". Kept alongside the numeric parts in this one
 // file so both live in a single place.
-#define SWIFTSQL_VER_STR "1.1.20"
+#define SWIFTSQL_VER_STR "1.1.21"
 
 #endif // SWIFTSQL_VERSION_H
