@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
 project(SwiftSQL
-    VERSION 1.1.20
+    VERSION 1.1.21
     DESCRIPTION "Lightweight cross-platform SQL client"
     LANGUAGES CXX
 )
