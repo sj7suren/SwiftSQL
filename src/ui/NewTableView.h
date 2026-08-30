@@ -19,7 +19,8 @@ public:
     explicit NewTableView(wxWindow* parent) : TableDesignView(parent) {}
 
     // Start an empty CREATE-TABLE design in `database` (no table name yet).
-    void BeginNew(db::IConnection* conn, const wxString& database, db::DbType type);
+    void BeginNew(std::shared_ptr<db::IConnection> conn, const wxString& database,
+                  db::DbType type);
     // Fired with the new table name after a successful create — the host refreshes the
     // 表信息 list / sidebar so the table appears.
     void SetOnTableCreated(std::function<void(const wxString&)> cb) { onCreated_ = std::move(cb); }
@@ -27,7 +28,8 @@ public:
 protected:
     // A new table has no name yet, so editability must NOT require table_ — otherwise
     // every toolbar button (增加字段 / 保存 / …) and the attribute panel disable.
-    bool IsEditable() const override { return conn_ && conn_->IsConnected(); }
+    bool IsEditable() const override
+    { const auto c = Conn(); return c && c->IsConnected(); }
     void SaveViaShortcut() override { OnSaveActiveTab(); }   // Ctrl+S → CREATE (prompt name)
     void OnSaveActiveTab() override;        // prompt for a name → CREATE
     void RefreshGeneratedTabs() override;   // ⑥DDL 预览 = CREATE preview (no ALTER, no ⑦)
